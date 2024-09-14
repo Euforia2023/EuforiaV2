@@ -126,6 +126,7 @@ body {
 .nav__item {
   position: relative;
   display: block;
+  font-family: "Playwrite CU", cursive;
   margin: 0.5em 0;
   padding: 0.5em 2em;
   font-size: 2.8rem;
