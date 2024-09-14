@@ -60,6 +60,7 @@ html {
 
 body {
   font-family: "Arial", serif;
+  overflow: hidden;
 }
 
 .burger-btn {
