@@ -284,6 +284,7 @@ body {
 
 	.hero-img {
 		padding: 30rem 2em;
+		background-image: url('../img/purple_1280.jpg');
 
 		hr {
 			margin: 0 auto;
@@ -339,6 +340,16 @@ body {
 
 	.hero-img {
 		padding: 40rem 2em;
+		background-image: url('../img/purple_1920.jpg');
+
+		&__title {
+			font-size: 7.2rem;
+		}
+
+		hr {
+			width: 60%;
+			max-width: 900px;
+		}
 	}
 }
 
