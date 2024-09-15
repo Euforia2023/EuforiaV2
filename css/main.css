@@ -126,9 +126,9 @@ body {
 .nav__item {
   position: relative;
   display: block;
-  font-family: "Playwrite CU", cursive;
   margin: 0.5em 0;
   padding: 0.5em 2em;
+  font-family: "Playwrite CU", cursive;
   font-size: 2.8rem;
   color: #fff;
   text-decoration: none;
@@ -160,6 +160,10 @@ body {
   animation: navItemAnimation 1s both;
 }
 
+.player-desktop {
+  display: none;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -167,7 +171,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  height: 80vh;
+  height: 85vh;
   text-align: center;
   color: #fff;
   background-image: url("../img/gradient.png");
@@ -175,27 +179,23 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: scroll;
+  overflow: hidden;
 }
-
-.playerSet {
-  with: 100%;
-  height: 250px;
-}
-
 .header iframe {
   margin-bottom: 20px;
 }
 .header__heading {
   font-family: "Playwrite CU", cursive;
-  font-size: 4rem;
+  font-size: 3.2rem;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .header__text {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   margin-top: 20px;
 }
 .header__btn {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: 12em;
   padding: 0.8em 1.6em;
   font-size: 1.4rem;
@@ -269,6 +269,12 @@ body {
     margin-bottom: 0;
     max-height: 300px;
   }
+  .player-mobile {
+    display: none;
+  }
+  .player-desktop {
+    display: block;
+  }
 }
 @media (min-width: 768px) {
   .white-block {
@@ -279,7 +285,7 @@ body {
     font-size: 6.6rem;
   }
   .header__text {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .header__btn {
     font-size: 1.6rem;
