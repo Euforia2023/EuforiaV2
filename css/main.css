@@ -62,15 +62,21 @@ body {
   font-family: "Arial", serif;
 }
 
-.fa-circle-play {
+.player_btn-set {
   position: fixed;
   top: 15px;
   left: 10px;
-  font-size: 4rem;
   color: #fff;
+  font-size: 4rem;
   padding: 0.5em;
   cursor: pointer;
+  transition: display 0.3s;
   z-index: 10;
+}
+
+.fa-stop {
+  display: none;
+  left: 15px;
 }
 
 .player_box {
@@ -198,10 +204,6 @@ body {
   animation: navItemAnimation 1s both;
 }
 
-.player-desktop {
-  display: none;
-}
-
 .header {
   position: relative;
   display: flex;
@@ -302,15 +304,6 @@ body {
   .presenters__img {
     margin-bottom: 0;
     max-height: 300px;
-  }
-  .player-mobile {
-    display: none;
-  }
-  .audio_player {
-    display: none;
-  }
-  .player-desktop {
-    display: block;
   }
 }
 @media (min-width: 768px) {
