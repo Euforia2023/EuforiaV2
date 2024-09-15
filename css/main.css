@@ -62,6 +62,44 @@ body {
   font-family: "Arial", serif;
 }
 
+.fa-circle-play {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  font-size: 4rem;
+  color: #fff;
+  padding: 0.5em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.player_box {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  padding: 1em;
+  background-color: rgba(133, 1, 133, 0.842);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transform: translateY(-200%);
+  z-index: 10000;
+}
+.player_box--active {
+  transform: translateY(0);
+}
+.player_box .fa-xmark {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 4rem;
+  padding: 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -171,7 +209,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  height: 85vh;
+  height: 60vh;
   text-align: center;
   color: #fff;
   background-image: url("../img/gradient.png");
@@ -186,18 +224,14 @@ body {
 }
 .header__heading {
   font-family: "Playwrite CU", cursive;
-  font-size: 3.2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 4rem;
 }
 .header__text {
   font-size: 2.4rem;
-  margin-top: 20px;
 }
 .header__btn {
   margin-top: 1em;
-  margin-left: 12em;
-  padding: 0.8em 1.6em;
+  padding: 0.8em 4.6em;
   font-size: 1.4rem;
   background: #fff;
   border: none;
@@ -270,6 +304,9 @@ body {
     max-height: 300px;
   }
   .player-mobile {
+    display: none;
+  }
+  .audio_player {
     display: none;
   }
   .player-desktop {
