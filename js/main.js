@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
 const playerBtnStart = document.querySelector('.fa-circle-play')
-const playerBtnStop = document.querySelector('.fa-stop')
+const playerBtnStop = document.querySelector('.fa-circle-pause')
 
 // PLAYER
 const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?nocache=1726423753')
