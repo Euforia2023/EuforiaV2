@@ -11,7 +11,7 @@ const btnStop = document.querySelector('.btn2')
 
 const buttonOnclick = () => {
 	btnPlay.addEventListener('click', () => {
-		await audio.play()
+		audio.play()
 	})
 
 	handlePlayersStart()
