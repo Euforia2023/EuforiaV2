@@ -45,6 +45,16 @@
 	transform-origin: left;
 }
 
+.user_play {
+	position: fixed;
+	left: 4.5em;
+	top: 2.4em;
+	font-size: 1.8rem;
+	color: #fff;
+	/* border-radius: 8px; */
+	z-index: 100;
+}
+
 *,
 *::after,
 *::before {
@@ -408,6 +418,10 @@ body {
 	}
 	.footer__bottom-text {
 		padding: 2em;
+	}
+
+	.user_play {
+		width: 250px;
 	}
 }
 @media (min-width: 768px) {
