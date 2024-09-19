@@ -17,8 +17,6 @@ const buttonOnclick = () => {
 	handlePlayersStart()
 }
 // PLAYER
-
-// const closePlayerBox = document.querySelector('.fa-xmark')
 const playerBox = document.querySelector('.player_box')
 
 const handlerNav = () => {
@@ -47,14 +45,6 @@ const handlePlayersStop = () => {
 	})
 }
 
-// const handlerPlayerBox = () => {
-// 	playerBox.classList.add('player_box--active')
-
-// 	closePlayerBox.addEventListener('click', () => {
-// 			playerBox.classList.remove('player_box--active')
-// 		})
-// }
-
 const handleNavItemAnimation = () => {
 	let delayTime = 0
 
@@ -66,6 +56,5 @@ const handleNavItemAnimation = () => {
 }
 
 navBtn.addEventListener('click', handlerNav)
-// playerBtn.addEventListener('click', handlerPlayerBox)
 playerBtnStart.addEventListener('click', buttonOnclick)
 playerBtnStop.addEventListener('click', handlePlayersStop)
