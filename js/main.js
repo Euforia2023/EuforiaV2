@@ -5,7 +5,7 @@ const playerBtnStart = document.querySelector('.fa-circle-play')
 const playerBtnStop = document.querySelector('.fa-circle-pause')
 
 // PLAYER
-const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?nocache=1726423753')
+const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?nocache=1726783850')
 const btnPlay = document.querySelector('.btn1')
 const btnStop = document.querySelector('.btn2')
 
