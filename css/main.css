@@ -62,6 +62,50 @@ body {
   font-family: "Arial", serif;
 }
 
+.player_btn-set {
+	position: fixed;
+	top: 15px;
+	left: 10px;
+	color: #fff;
+	font-size: 4rem;
+	padding: 0.5em;
+	cursor: pointer;
+	transition: display 0.3s;
+	z-index: 10;
+}
+
+.fa-circle-pause {
+	display: none;
+	left: 10px;
+}
+
+.player_box {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+	width: 100%;
+	padding: 1em;
+	background-color: rgba(133, 1, 133, 0.842);
+	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	transform: translateY(-200%);
+	z-index: 10000;
+}
+.player_box--active {
+	transform: translateY(0);
+}
+.player_box .fa-xmark {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 4rem;
+	padding: 0.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
