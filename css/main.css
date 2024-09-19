@@ -430,6 +430,10 @@ body {
 		height: 50px;
 		width: 45%;
 	}
+
+	.nav__item {
+		font-size: 2.5rem;
+	}
 	.header__heading {
 		font-size: 6.6rem;
 	}
