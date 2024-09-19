@@ -153,6 +153,9 @@ body {
 	transition-delay: 0.3s;
 }
 
+/* ******************************** */
+/* NAV */
+/* ******************************** */
 .nav {
 	position: fixed;
 	top: 0;
@@ -206,6 +209,9 @@ body {
 	animation: navItemAnimation 1s both;
 }
 
+/* ******************************** */
+/* HEADER */
+/* ******************************** */
 .header {
 	position: relative;
 	display: flex;
@@ -267,6 +273,9 @@ body {
 	padding: 6em 2em;
 }
 
+/* ******************************** */
+/* PRESENTERS */
+/* ******************************** */
 .presenters__box {
 	display: flex;
 	flex-direction: column;
@@ -283,6 +292,9 @@ body {
 	font-size: 1.4rem;
 }
 
+/* ******************************** */
+/* HERO IMG */
+/* ******************************** */
 .hero-img {
 	position: relative;
 	padding: 20em 2em;
@@ -307,6 +319,9 @@ body {
 	background-color: #2e2e2e;
 }
 
+/* ******************************** */
+/* FOOTER */
+/* ******************************** */
 .footer {
 	color: #fff;
 	background-color: #2e2e2e;
@@ -367,6 +382,9 @@ body {
 	text-transform: uppercase;
 }
 
+/* ******************************** */
+/* MEDIA */
+/* ******************************** */
 @media (min-width: 576px) {
 	.presenters__box {
 		flex-direction: row;
