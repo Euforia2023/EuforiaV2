@@ -75,11 +75,11 @@
 
 .arrow-up:hover {
 	color: rgba(133, 1, 133, 0.842);
-	border-color: rgba(133, 1, 133, 0.842);;
+	border-color: rgba(133, 1, 133, 0.842);
 	cursor: pointer;
 }
 .fa-arrow-up {
-	position: absolute;
+	position: fixed;
 }
 
 .arrow-up:hover > .fa-arrow-up {
