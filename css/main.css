@@ -56,7 +56,7 @@
 }
 
 .arrow-up {
-	display: flex;
+	display: fixed;
 	justify-content: center;
 	align-items: center;
 	position: fixed;
@@ -199,7 +199,7 @@ body {
 /* NAV */
 /* ******************************** */
 .nav {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	display: flex;
 	justify-content: center;
