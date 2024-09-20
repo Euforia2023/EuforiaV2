@@ -66,7 +66,7 @@
 	height: 40px;
 	font-size: 2rem;
 	color: rgba(231, 8, 231, 0.842);
-	border: 3px solid rgba(231, 8, 231, 0.842);;
+	border: 3px solid rgba(231, 8, 231, 0.842);
 	border-radius: 50%;
 	transition: color, border-color .3s;
 	z-index: 1000;
@@ -199,7 +199,7 @@ body {
 /* NAV */
 /* ******************************** */
 .nav {
-	position: absolute;
+	position: fixes
 	top: 0;
 	display: flex;
 	justify-content: center;
