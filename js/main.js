@@ -4,6 +4,7 @@ const allNavItems = document.querySelectorAll('.nav__item')
 const playerBtnStart = document.querySelector('.fa-circle-play')
 const playerBtnStop = document.querySelector('.fa-circle-pause')
 const scrollUpArrow = document.querySelector('.fa-chevron-up')
+const audioPlay = document.querySelector('.audio_play')
 
 // PLAYER
 const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?sid=1')
@@ -11,24 +12,21 @@ const btnPlay = document.querySelector('.btn1')
 const btnStop = document.querySelector('.btn2')
 
 const buttonOnclick = () => {
-	btnPlay.addEventListener('click', () => {
-		audio.play()
-	})
-
-	handlePlayersStart()
-}
-const handlePlayersStart = () => {
 	playerBtnStart.style.display = 'none'
 	playerBtnStop.style.display = 'block'
+	audio.play()
+
+	// handlePlayersStart()
 }
+// const handlePlayersStart = () => {
+// 	playerBtnStart.style.display = 'none'
+// 	playerBtnStop.style.display = 'block'
+// }
 
 const handlePlayersStop = () => {
 	playerBtnStart.style.display = 'block'
 	playerBtnStop.style.display = 'none'
-
-	btnStop.addEventListener('click', () => {
-		audio.pause()
-	})
+	audio.pause()
 }
 // PLAYER END
 
