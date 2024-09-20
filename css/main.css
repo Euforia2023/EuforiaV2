@@ -519,6 +519,13 @@ body {
 	.footer__box-zaiks {
 		text-align: left;
 	}
+
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	.section-padding {
+		padding: 8em 2em;
+	}
 }
 @media (min-width: 992px) {
 	.header-btn {
@@ -560,21 +567,11 @@ body {
 		width: 60%;
 		max-width: 900px;
 	}
-}
-
-@media (min-widh: 768px) {
-	.section-heading {
-		font-size: 3.6rem;
-	}
-	.section-padding {
-		padding: 8em 2em;
-	}
-}
-@media (min-width: 576px) and (min-widh: 992px) {
 	.section-heading {
 		font-size: 4.8rem;
 	}
 	.section-padding {
 		padding: 10em 2em;
 	}
-} /*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
