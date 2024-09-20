@@ -3,6 +3,7 @@ const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
 const playerBtnStart = document.querySelector('.fa-circle-play')
 const playerBtnStop = document.querySelector('.fa-circle-pause')
+const scrollUpArrow = document.querySelector('.fa-arrow-up')
 
 // PLAYER
 const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?sid=1')
@@ -16,21 +17,6 @@ const buttonOnclick = () => {
 
 	handlePlayersStart()
 }
-// PLAYER
-const playerBox = document.querySelector('.player_box')
-
-const handlerNav = () => {
-	nav.classList.toggle('nav--active')
-
-	allNavItems.forEach(item => {
-		item.addEventListener('click', () => {
-			nav.classList.remove('nav--active')
-		})
-	})
-
-	handleNavItemAnimation()
-}
-
 const handlePlayersStart = () => {
 	playerBtnStart.style.display = 'none'
 	playerBtnStop.style.display = 'block'
@@ -44,6 +30,20 @@ const handlePlayersStop = () => {
 		audio.pause()
 	})
 }
+// PLAYER END
+
+// NAV
+const handlerNav = () => {
+	nav.classList.toggle('nav--active')
+
+	allNavItems.forEach(item => {
+		item.addEventListener('click', () => {
+			nav.classList.remove('nav--active')
+		})
+	})
+
+	handleNavItemAnimation()
+}
 
 const handleNavItemAnimation = () => {
 	let delayTime = 0
@@ -54,7 +54,27 @@ const handleNavItemAnimation = () => {
 		delayTime++
 	})
 }
+// NAV END
 
+// SCROLL UP ARROW
+window.onscroll = function () {
+	scrollUp()
+}
+
+function scrollUp() {
+	if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+		scrollUpArrow.style.display = 'flex'
+	} else {
+		scrollUpArrow.style.display = 'none'
+	}
+}
+
+function scrollStart() {
+	document.body.scrollTop = 0
+	document.documentElement.scrollTop = 0
+}
+// SCROLL UP ARROW END
 navBtn.addEventListener('click', handlerNav)
 playerBtnStart.addEventListener('click', buttonOnclick)
 playerBtnStop.addEventListener('click', handlePlayersStop)
+scrollUpArrow.addEventListener('click', scrollStart)
