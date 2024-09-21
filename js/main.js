@@ -5,7 +5,29 @@ const playerBtnStart = document.querySelector('.fa-circle-play')
 const playerBtnStop = document.querySelector('.fa-circle-pause')
 const scrollUpArrow = document.querySelector('.fa-chevron-up')
 const audioPlay = document.querySelector('.audio_play')
+const pop = document.querySelector('.pop')
 
+// POPUP WINDOW
+
+function regards() {
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=pozdrowienia', '_blank', 'width=400, height=250')
+}
+
+function ram() {
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka', '_blank', 'widh=300')
+}
+
+function presenters() {
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa', '_blank', 'widh=600, height=800')
+}
+
+function recrut() {
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja', '_blank', 'widh=630, height=700')
+}
+
+function listp() {
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=lista', '_blank', 'widh=630, height=700')
+}
 // PLAYER
 const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?sid=1')
 const btnPlay = document.querySelector('.btn1')
