@@ -82,7 +82,7 @@ window.onscroll = function () {
 }
 
 function scrollUp() {
-	if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+	if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
 		scrollUpArrow.style.display = 'flex'
 	} else {
 		scrollUpArrow.style.display = 'none'
