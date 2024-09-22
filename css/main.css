@@ -59,7 +59,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
+	position: relative;
 	bottom: 20px;
 	right: 20px;
 	width: 40px;
