@@ -71,11 +71,11 @@ $stats = new shoutcast2stats('s3.slotex.pl', 7510);
 // echo $stats->get('peaklisteners'); // Rekord słuchaczy (ta wartość resetuje się w momencie restartu serwera SHOUTcast 2)
 // echo $stats->get('maxlisteners'); // Maksymalna ilość słuchaczy (ilość slotów)
 // echo $stats->get('servertitle'); // Wyświetla wartość pola "Stream Name", czyli często uznawane jako "Nazwa audycji". Poprawnie powinno odpowiadać za nazwę radia.
-// echo $stats->get('servergenre'); // Wyświetla wartość pola "Stream Genre(s)", czyli często uznawane jako "Nazwa prezentera". Poprawnie powinno odpowiadać za gatunki odgrywanej muzyki.
+ echo $stats->get('servergenre'); // Wyświetla wartość pola "Stream Genre(s)", czyli często uznawane jako "Nazwa prezentera". Poprawnie powinno odpowiadać za gatunki odgrywanej muzyki.
 // echo $stats->get('songtitle'); // Wyświetla wartość pola "Playing Now", czyli nazwa aktualnie odgrywanego utworu lub teksty E-RDS.
 // echo $stats->get('dj'); // Wyświetla wartość pola "dj" (pole dostępne tylko w statystykach).
 // // UWAGA! Poniższe opcje są dostępne tylko do usług Auto DJ zakupionych w firmie Slotex.pl, jeżeli korzystasz z funkcjonalności "Live DJ".
 // echo $stats->get('dj', 'icy-name'); // Wyświetla wartość pola "Name" wpisaną w programie do nadawania, czyli często uznawane jako "Nazwa audycji".
-echo $stats->get('dj', 'icy-genre'); // Wyświetla wartość pola "Genre" wpisaną w programie do nadawania, czyli często uznawane jako "Nazwa prezentera".
+// echo $stats->get('dj', 'icy-genre'); // Wyświetla wartość pola "Genre" wpisaną w programie do nadawania, czyli często uznawane jako "Nazwa prezentera".
 
 ?>
