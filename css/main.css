@@ -45,6 +45,10 @@
 	transform-origin: left;
 }
 
+.logo-img {
+        display: none;
+}
+
 .user_play {
 	position: absolute;
 	left: 4.5em;
@@ -59,7 +63,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
+	position: relative;
 	bottom: 20px;
 	right: 20px;
 	width: 40px;
