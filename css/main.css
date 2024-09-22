@@ -46,12 +46,18 @@
 }
 
 .logo-img {
-        display: none;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	padding: 1em;
+	width: 60px;
+	height: 60px;
+	z-index: 100;
 }
 
 .user_play {
 	position: absolute;
-	left: 4.5em;
+	left: 7.6em;
 	top: 2.5em;
 	font-size: 1.8rem;
 	color: #fff;
@@ -60,16 +66,17 @@
 }
 
 .fa-chevron-up {
+	display: none;
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 80px;
+	right: 40px;
 	width: 40px;
 	height: 40px;
-	padding: 2em;
+	padding: 0.5em;
 	font-size: 4rem;
 	color: #e708e7d7;
 	border-radius: 50%;
-	transition: color, border-color, bottom 0.3s;
+	transition: color 0.3s, bottom 0.3s;
 	z-index: 1000;
 }
 
@@ -77,7 +84,7 @@
 	color: rgba(253, 67, 253, 0.842);
 	border-color: rgba(253, 67, 253, 0.842);
 	cursor: pointer;
-	bottom: 2px;
+	bottom: 82px;
 }
 
 *,
@@ -100,7 +107,7 @@ body {
 .player_btn-set {
 	position: absolute;
 	top: 15px;
-	left: 10px;
+	left: 80px;
 	color: #fff;
 	font-size: 4rem;
 	padding: 0.5em;
@@ -111,36 +118,9 @@ body {
 
 .fa-circle-pause {
 	display: none;
-	left: 10px;
+	left: 80px;
 	position: absolute;
 }
-
-/* .player_box {
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 60vh;
-	width: 100%;
-	padding: 1em;
-	background-color: rgba(133, 1, 133, 0.842);
-	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-	transform: translateY(-200%);
-	z-index: 10000;
-}
-.player_box--active {
-	transform: translateY(0);
-}
-.player_box .fa-xmark {
-	position: absolute;
-	top: 15px;
-	left: 15px;
-	font-size: 4rem;
-	padding: 0.5em;
-	color: #fff;
-	cursor: pointer;
-} */
 
 .burger-btn {
 	position: absolute;
@@ -279,15 +259,16 @@ body {
 }
 .header__btn {
 	margin-top: 2em;
-	margin-left: 12em;
-	padding: 0.8em 1.6em;
-	font-size: 1.4rem;
+	width: 100%;
+	max-width: 200px;
+	padding: 1em 1.2em;
 	background: #fff;
 	border: none;
 	border-radius: 8px;
 	color: #2e2e2e;
 	text-decoration: none;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 	cursor: pointer;
 }
 .header__btn::before {
@@ -319,6 +300,7 @@ body {
 }
 .presenters__img {
 	width: 100%;
+	height: auto;
 	margin-bottom: 1em;
 }
 .presenters__title {
@@ -356,9 +338,68 @@ body {
 }
 
 /* ******************************** */
+/* CONTACT */
+/* ******************************** */
+.contact {
+	position: relative;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.contact .white-block-left {
+	background: #2e2e2e;
+}
+
+.contact__form,
+.contact__form-top {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4em;
+}
+
+.contact__form-label {
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+
+.contact__form-input,
+.contact__form-label-textarea {
+	margin-bottom: 2em;
+	padding: 0.6em 1.2em;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.6rem;
+}
+
+.contact__form-label-textarea {
+	max-width: 100%;
+	min-width: 100%;
+	width: 100%;
+	min-height: 150px;
+}
+
+.contact__form-btn {
+	align-self: flex-end;
+	padding: 1em;
+	width: 100%;
+	max-width: 300px;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	background-color: rgba(133, 1, 133, 0.842);
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.contact__form-btn::before {
+	background-color: rgba(248, 24, 248, 0.842);
+}
+
+/* ******************************** */
 /* FOOTER */
 /* ******************************** */
 .footer {
+	position: relative;
 	color: #fff;
 	background-color: #2e2e2e;
 	overflow: hidden;
@@ -389,6 +430,15 @@ body {
 	text-decoration: none;
 	transition: color 0.3s;
 }
+
+.footer__box li > a {
+	transition: color 0.3s;
+}
+
+.footer__box li > a:hover {
+	color: rgba(248, 24, 248, 0.842);
+}
+
 .footer__box-link:first-child {
 	padding-left: 0;
 }
@@ -429,6 +479,9 @@ body {
 /* MEDIA */
 /* ******************************** */
 @media (min-width: 576px) {
+	.header__btn {
+		margin-left: 6em;
+	}
 	.presenters__box {
 		flex-direction: row;
 		justify-content: space-between;
@@ -456,6 +509,14 @@ body {
 	.user_play {
 		width: 450px;
 	}
+
+	.fa-chevron-up {
+		bottom: 120px;
+	}
+
+	.fa-chevron-up:hover {
+		bottom: 122px;
+	}
 }
 @media (min-width: 768px) {
 	.white-block {
@@ -473,7 +534,9 @@ body {
 		font-size: 2.2rem;
 	}
 	.header__btn {
-		font-size: 1.6rem;
+		margin-left: 12em;
+		max-width: 300px;
+		font-size: 1.4rem;
 	}
 	.presenters__text {
 		font-size: 1.8rem;
