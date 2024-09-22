@@ -81,13 +81,13 @@ window.onscroll = function () {
 	scrollUp()
 }
 
-//function scrollUp() {
-	//if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-		//scrollUpArrow.style.display = 'flex'
-	//} else {
-		//scrollUpArrow.style.display = 'none'
-	//}
-//}
+function scrollUp() {
+	if (scrollUpArrow.style.bottom == 0) {
+		scrollUpArrow.style.display = 'flex'
+	} else {
+		scrollUpArrow.style.display = 'none'
+	}
+}
 
 function scrollStart() {
 	document.body.scrollTop = 0
