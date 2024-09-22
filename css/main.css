@@ -56,10 +56,10 @@
 }
 
 .fa-chevron-up {
-	display: none;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: fixed;
+	position: absolute;
 	bottom: 20px;
 	right: 20px;
 	width: 40px;
