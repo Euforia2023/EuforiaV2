@@ -55,6 +55,10 @@
 	z-index: 100;
 }
 
+.footer__logo-img {
+       margin-right: 40px;
+}
+
 .user_play {
 	position: absolute;
 	left: 7.6em;
