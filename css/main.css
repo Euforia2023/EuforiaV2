@@ -273,9 +273,10 @@ body {
 	border-radius: 8px;
 	color: rgba(231, 8, 231, 0.842);
 	font-family: 'Playwrite CU', cursive;
+	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 	cursor: pointer;
 }
 .header__btn::before {
