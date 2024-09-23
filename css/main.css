@@ -1,4 +1,4 @@
-.wrapper {
+f.wrapper {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
@@ -58,7 +58,7 @@
 .logo_footer-img {
 	position: absolute;
 	bottom: 90px;
-	left: 40px;
+	left: 30px;
 }
 
 .user_play {
