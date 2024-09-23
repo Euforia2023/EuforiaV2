@@ -1,3 +1,5 @@
+import { randomMonday, randomTuesday, randomTextMonday, randomTextTuesday, randomTextWendesday, randomTextThirsday } from './components.js'
+
 const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
@@ -6,6 +8,8 @@ const playerBtnStop = document.querySelector('.fa-circle-pause')
 const scrollUpArrow = document.querySelector('.fa-chevron-up')
 const audioPlay = document.querySelector('.audio_play')
 const pop = document.querySelector('.pop')
+const textShow = document.querySelector('.ShowText')
+// const randFile = await import('./random')
 
 // POPUP WINDOW
 
@@ -93,6 +97,15 @@ function scrollStart() {
 	document.body.scrollTop = 0
 	document.documentElement.scrollTop = 0
 }
+
+// RANDOM TEXT
+onload = function () {
+	randomTextMonday(), 
+	randomTextTuesday(),
+	randomTextWendesday(),
+	randomTextThirsday()
+}
+
 // SCROLL UP ARROW END
 navBtn.addEventListener('click', handlerNav)
 playerBtnStart.addEventListener('click', buttonOnclick)
