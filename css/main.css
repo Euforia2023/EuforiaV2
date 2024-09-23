@@ -516,6 +516,10 @@ body {
 		width: 250px;
 	}
 
+	.logo_footer-img {
+                right: 40px;
+	}
+
 	.fa-chevron-up {
 		bottom: 120px;
 	}
