@@ -56,7 +56,9 @@
 }
 
 .logo_footer-img {
-       margin-right: 40px;
+       position: absolute;
+       bottom: 40px;
+       left: 40px;
 }
 
 .user_play {
