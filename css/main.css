@@ -4,6 +4,10 @@ f.wrapper {
 	max-width: 1200px;
 }
 
+.wrapper_footer {
+	max-width: 900px;
+	}
+
 .white-block {
 	position: absolute;
 	height: 40px;
