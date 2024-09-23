@@ -56,9 +56,9 @@
 }
 
 .logo_footer-img {
-       position: absolute;
-       bottom: 90px;
-       left: 40px;
+	position: absolute;
+	bottom: 90px;
+	left: 40px;
 }
 
 .user_play {
@@ -74,7 +74,7 @@
 .fa-chevron-up {
 	display: none;
 	position: absolute;
-	bottom: 80px;
+	bottom: 100px;
 	right: 40px;
 	width: 40px;
 	height: 40px;
@@ -518,12 +518,12 @@ body {
 	}
 
 	.logo_footer-img {
-                right: 40px;
-		bottom: 75px;
+		right: 40px;
+		bottom: 130px;
 	}
 
 	.fa-chevron-up {
-		bottom: 120px;
+		bottom: 140px;
 	}
 
 	.fa-chevron-up:hover {
@@ -594,6 +594,12 @@ body {
 
 	.footer__box-zaiks {
 		text-align: left;
+	}
+
+	.logo_footer-img {
+		/* right: 40px; */
+		left: 69%;
+		bottom: 130px;
 	}
 
 	.section-heading {
