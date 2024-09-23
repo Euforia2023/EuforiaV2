@@ -90,7 +90,7 @@
 	color: rgba(253, 67, 253, 0.842);
 	border-color: rgba(253, 67, 253, 0.842);
 	cursor: pointer;
-	bottom: 82px;
+	bottom: 102px;
 }
 
 *,
@@ -541,7 +541,7 @@ body {
 	}
 
 	.fa-chevron-up:hover {
-		bottom: 122px;
+		bottom: 142px;
 	}
 }
 @media (min-width: 768px) {
