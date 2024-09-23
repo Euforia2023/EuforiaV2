@@ -276,6 +276,7 @@ body {
 	font-sise: 3rem;
 	font-weight: bold;
 	text-decoration: none;
+	text-decoration: uppercase;
 	letter-spacing: 4px;
 	cursor: pointer;
 }
