@@ -459,13 +459,15 @@ body {
 }
 
 .footer__box-zaiks {
-	margin-top: 4em;
+	/* margin-top: 4em; */
 	text-align: right;
 }
 
 .footer__box-title-zaiks {
 	font-size: 2rem;
 	font-weight: 300;
+	color: rgba(231, 8, 231, 0.842);
+	font-weight: bold;
 }
 
 .footer__box-zaiks p {
