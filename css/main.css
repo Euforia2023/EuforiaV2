@@ -58,7 +58,7 @@
 .logo_footer-img {
        position: absolute;
        bottom: 75px;
-       right: 40px;
+       left: 40px;
 }
 
 .user_play {
@@ -518,7 +518,7 @@ body {
 
 	.logo_footer-img {
                 right: 40px;
-		bottom: 90px;
+		bottom: 75px;
 	}
 
 	.fa-chevron-up {
