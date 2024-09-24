@@ -1,4 +1,11 @@
-import { randomMonday, randomTuesday, randomTextMonday, randomTextTuesday, randomTextWendesday, randomTextThirsday } from './components.js'
+import {
+	randomMonday,
+	randomTuesday,
+	randomTextMonday,
+	randomTextTuesday,
+	randomTextWendesday,
+	randomTextThirsday,
+} from './components.js'
 
 const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
@@ -85,13 +92,13 @@ window.onscroll = function () {
 	scrollUp()
 }
 
-function scrollUp() {
-	if (scrollUpArrow.style.bottom == 0) {
-		scrollUpArrow.style.display = 'flex'
-	} else {
-		scrollUpArrow.style.display = 'none'
-	}
-}
+// function scrollUp() {
+// 	if (scrollUpArrow.style.bottom == 0) {
+// 		scrollUpArrow.style.display = 'flex'
+// 	} else {
+// 		scrollUpArrow.style.display = 'none'
+// 	}
+// }
 
 function scrollStart() {
 	document.body.scrollTop = 0
@@ -100,10 +107,7 @@ function scrollStart() {
 
 // RANDOM TEXT
 onload = function () {
-	randomTextMonday(), 
-	randomTextTuesday(),
-	randomTextWendesday(),
-	randomTextThirsday()
+	randomTextMonday(), randomTextTuesday(), randomTextWendesday(), randomTextThirsday()
 }
 
 // SCROLL UP ARROW END
