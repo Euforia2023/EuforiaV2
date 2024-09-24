@@ -560,7 +560,7 @@ body {
 		bottom: 142px;
 	}
 	
-	.footer {
+	.footer .wrapper{
 		max-width: 900px;
 	}
 }
