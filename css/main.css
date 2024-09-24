@@ -125,6 +125,10 @@ body {
 	z-index: 10;
 }
 
+.player_btn-set:hover, .fa-circle-pause:hover {
+	color: rgb(210, 162, 255);
+}
+
 .fa-circle-pause {
 	display: none;
 	left: 110px;
@@ -276,11 +280,11 @@ body {
 	border-radius: 8px;
 	color: rgba(231, 8, 231, 0.842);
 	font-family: 'Playwrite CU', cursive;
-	font-size: 3.3rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
 	text-decoration: uppercase;
-	letter-spacing: 4px;
+	letter-spacing: 6px;
 	cursor: pointer;
 }
 .header__btn::before {
