@@ -414,6 +414,9 @@ body {
 /* FOOTER */
 /* ******************************** */
 .footer {
+	display: flex;
+	justifie-content: center;
+	align-items: center;
 	position: relative;
 	color: #fff;
 	background-color: #2e2e2e;
