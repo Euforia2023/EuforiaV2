@@ -323,9 +323,9 @@ body {
 	align-items: center;
 }
 
-.header__medias-box:hover a{
+/* .header__medias-box:hover a{
 	color: rgb(255, 0, 255);
-}
+} */
 
 .header__medias-box p {
 	font-size: 1.6rem;
@@ -334,12 +334,15 @@ body {
 
 .header__medias-btn {
 	/* width: 100%; */
-	padding: 0.5em 0.5em 0 0.5em;
+	/* padding: 0.5em 0.5em 0 0.5em; */
 	font-size: 1.8rem;
 	background: transparent;
 	border: none;
 	color: #eee;
 	cursor: pointer;
+}
+.header__medias-btn:hover a{
+	color: rgb(255, 0, 255);
 }
 .header__medias-btn a {
 	color: #fff;
