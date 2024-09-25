@@ -364,7 +364,9 @@ body {
 	margin-bottom: 1em;
 }
 .presenters__title {
-	margin-bottom: 0.5em;
+	/* margin-bottom: -1.5em; */
+	font-size: 3rem;
+	text-align: center;
 }
 .presenters__text {
 	font-size: 1.4rem;
@@ -585,6 +587,9 @@ body {
 	.presenters__box-text--right {
 		text-align: right;
 	}
+	.presenters__title {
+		margin-top: 2em;
+	}
 	.presenters__box-img {
 		width: 40%;
 	}
@@ -642,6 +647,9 @@ body {
 	} */
 	.presenters__text {
 		font-size: 1.8rem;
+	}
+	.presenters__title {
+		margin-top: 2.5em;
 	}
 	.presenters__box-text {
 		margin-bottom: 12.5em;
@@ -755,6 +763,7 @@ body {
 	}
 	.presenters__title {
 		font-size: 3.6rem;
+		margin-top: 3.5em;
 	}
 	.presenters__text {
 		font-size: 2.2rem;
