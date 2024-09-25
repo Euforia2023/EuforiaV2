@@ -125,7 +125,8 @@ body {
 	z-index: 10;
 }
 
-.player_btn-set:hover, .fa-circle-pause:hover {
+.player_btn-set:hover,
+.fa-circle-pause:hover {
 	color: rgb(210, 162, 255);
 }
 
@@ -287,6 +288,22 @@ body {
 	letter-spacing: 6px;
 	cursor: pointer;
 }
+.header__medias {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 32em;
+	left: 4em;
+}
+
+.header__medias-btn {
+	width: 100%;
+	padding: 1em;
+	font-size: 2.4rem;
+	background: transparent;
+}
 .header__btn::before {
 	background-color: #eee;
 }
@@ -436,7 +453,6 @@ body {
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: rgba(231, 8, 231, 0.842);
 	margin-bottom: 0.5em;
 	margin-top: 0.75em;
 }
@@ -705,7 +721,7 @@ body {
 
 	.logo_footer-img {
 		left: 100%;
-		bottom: 120px;
+		bottom: 115px;
 	}
 
 	.footer__box-title {
