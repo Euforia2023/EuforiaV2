@@ -67,10 +67,13 @@
     <header class="header section">
         <div class="header__medias">
             <button class="header__medias-btn chat">
-                <i class="fa-regular fa-comment-dots"></i>
+                <a href="https://polfan.pl/app/" target="_blank" rel="noopener"><i class="fa-regular fa-comment-dots"></i></a>
             </button>
             <button class="header__medias-btn list">
-                <i class="fa-solid fa-list"></i>
+                <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=lista" rel="noopener" onclick="listp()"><i class="fa-solid fa-list"></i></a>
+            </button>
+            <button class="header__medias-btn fb">
+                <a href="https://www.facebook.com/profile.php?id=61554288802486" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
             </button>
         </div>
         <h1 class="header__heading">Radio Euforia</h1>
@@ -80,8 +83,9 @@
         <!-- <audio controls muted class="audio_player">
             <source src="https://s3.slotex.pl/shoutcast/7510/stream?nocache=1726321496">
         </audio> -->
-        <a href="https://polfan.pl/app/" target="_blank" rel="noopener"
-            class="header__btn btn-special-animation">Czat</a>
+        <!-- <a href="https://polfan.pl/app/" target="_blank" rel="noopener"
+            class="header__btn btn-special-animation">Ramówka</a> -->
+            <a class="arrow-down-link" href="#ram"><i class="fa-solid fa-chevron-down header__arrow-down"></i></a>
         <div class="white-block white-block-left"></div>
     </header>
 
@@ -91,7 +95,7 @@
 
             <div class="wrapper">
 
-                <h2 class="section-heading">Ramówka</h2>
+                <h2 class="section-heading" id="ram">Ramówka</h2>
 
                 <div class="presenters__box">
 
@@ -271,7 +275,7 @@
     </footer>
 
     <script src="./js/main.js" type="module"></script>
-    <script src="./js/autumn.js"></script>
+    <!-- <script src="./js/autumn.js"></script> -->
 </body>
 
 </html>
