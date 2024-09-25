@@ -573,6 +573,15 @@ body {
 	padding: 2em;
 }
 
+.footer > .lillie {
+        color: rgb(255, 0, 255);
+
+}
+
+.footer > .eric {
+       color: lightblue;
+}
+
 /* ******************************** */
 /* MEDIA */
 /* ******************************** */
