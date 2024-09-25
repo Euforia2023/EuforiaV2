@@ -16,6 +16,7 @@ const scrollUpArrow = document.querySelector('.fa-chevron-up')
 const audioPlay = document.querySelector('.audio_play')
 const pop = document.querySelector('.pop')
 const textShow = document.querySelector('.ShowText')
+const footerYera = document.querySelector('.footer__year')
 // const randFile = await import('./random')
 
 // POPUP WINDOW
@@ -106,11 +107,18 @@ function scrollStart() {
 }
 
 // RANDOM TEXT
-onload = function () {
-	randomTextMonday(), randomTextTuesday(), randomTextWendesday(), randomTextThirsday()
+// onload = function () {
+// 	randomTextMonday(), randomTextTuesday(), randomTextWendesday(), randomTextThirsday()
+// }
+
+// FOOTER YEAR
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYera.innerText = year;
 }
 
 // SCROLL UP ARROW END
+handleCurrentYear()
 navBtn.addEventListener('click', handlerNav)
 playerBtnStart.addEventListener('click', buttonOnclick)
 playerBtnStop.addEventListener('click', handlePlayersStop)
