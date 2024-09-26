@@ -1,11 +1,11 @@
-import {
-	randomMonday,
-	randomTuesday,
-	randomTextMonday,
-	randomTextTuesday,
-	randomTextWendesday,
-	randomTextThirsday,
-} from './components.js'
+//import {
+	//randomMonday,
+	//randomTuesday,
+	//=randomTextMonday,
+	//randomTextTuesday,
+	//randomTextWendesday,
+	//randomTextThirsday,
+//} from './components.js'
 
 const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
