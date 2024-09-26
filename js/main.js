@@ -6,7 +6,6 @@
 	//randomTextWendesday,
 	//randomTextThirsday,
 //} from './components.js'
-import 'jQuety.js'
 
 const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
