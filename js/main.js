@@ -1,10 +1,10 @@
 //import {
-	//randomMonday,
-	//randomTuesday,
-	//=randomTextMonday,
-	//randomTextTuesday,
-	//randomTextWendesday,
-	//randomTextThirsday,
+//randomMonday,
+//randomTuesday,
+//=randomTextMonday,
+//randomTextTuesday,
+//randomTextWendesday,
+//randomTextThirsday,
 //} from './components.js'
 
 const nav = document.querySelector('.nav')
@@ -113,8 +113,8 @@ function scrollStart() {
 
 // FOOTER YEAR
 const handleCurrentYear = () => {
-	const year = new Date().getFullYear();
-	footerYera.innerText = year;
+	const year = new Date().getFullYear()
+	footerYera.innerText = year
 }
 
 // SCROLL UP ARROW END
