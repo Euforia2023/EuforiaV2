@@ -192,7 +192,7 @@ body {
 	align-items: center;
 	position: absolute;
 	top: 9em;
-	right: 3em;
+	right: 2.5em;
 	transition: color .3s;
 	z-index: 100;
 }
