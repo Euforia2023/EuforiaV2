@@ -72,7 +72,7 @@
 	left: 9.5em;
 	top: 2.3em;
 	font-size: 1.8rem;
-	font-weight: 600;
+    font-weight: 600;
 	color: #fff;
 	/* border-radius: 8px; */
 	z-index: 100;
@@ -111,7 +111,7 @@ html {
 }
 
 body {
-	font-family: 'Arial', serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 .player_btn-set {
@@ -342,7 +342,7 @@ body {
 	color: #eee;
 	cursor: pointer;
 }
-.header__medias-btn:hover a{
+.header__medias-btn:hover a {
 	color: rgb(255, 0, 255);
 }
 .header__medias-btn a {
@@ -361,7 +361,7 @@ body {
 	position: relative;
 	margin-bottom: 2em;
 	font-size: 3rem;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(231, 8, 231, 0.842);
@@ -395,7 +395,7 @@ body {
 	text-align: center;
 	font-family: 'Playwrite CU', cursive;
 	color: rgba(133, 1, 133, 0.842);
-		/*rgba(231, 8, 231, 0.842);*/
+	/*rgba(231, 8, 231, 0.842);*/
 }
 .presenters__text {
 	font-size: 1.4rem;
@@ -577,12 +577,11 @@ body {
 }
 
 .lillie {
-        color: pink;
-
+	color: pink;
 }
 
 .eric {
-       color: lightblue;
+	color: lightblue;
 }
 
 /* ******************************** */
@@ -802,8 +801,6 @@ body {
 		top: -1.8em;
 	}
 
-	
-
 	.header__arrow-down {
 		margin-top: 0;
 		font-size: 4rem;
@@ -834,7 +831,7 @@ body {
 		font-size: 2.2rem;
 	}
 	.hero-img {
-		padding: 35rem 2em;
+		padding: 25rem 2em;
 		background-image: url('../img/purple_1920.jpg');
 	}
 	.hero-img__title {
@@ -853,7 +850,7 @@ body {
 
 	.logo_footer-img {
 		left: 100%;
-		bottom: 100px;
+		bottom: 102px;
 	}
 
 	.footer__box-title {
