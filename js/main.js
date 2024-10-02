@@ -30,11 +30,11 @@ function ram() {
 }
 
 function presenters() {
-	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa', '_blank', 'widh=600, height=800')
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa', '_blank', 'height=800')
 }
 
 function recrut() {
-	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja', '_blank', 'widh=630, height=700')
+	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja', '_blank', 'height=700')
 }
 
 function listp() {
