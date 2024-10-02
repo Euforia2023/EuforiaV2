@@ -11,10 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -32,7 +35,7 @@
     </div>
     <div class="player_box">
         <marquee class="user_play" direction="left" width="120" height="30" behavior="scroll" style="border:none">Gra
-            dla was:
+            dla was: <?php include 'stats.php' ?>
         </marquee>
     </div>
 
@@ -49,12 +52,14 @@
         <div class="nav__items">
             <a href="https://radioeuforia.panelradiowy.pl/radio.php?script" target="_blank" rel="noopener"
                 class="nav__item">Słuchaj nas w playerze</a>
+            <a href="https://play.google.com/store/apps/details?id=com.panelradiowy" target="_blank" rel="noopener"
+                class="nav__item">Pobierz aplikację</a>
             <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=pozdrowienia" target="_blank" rel="noopener"
                 class="nav__item pop" onclick="regards()">Pozdrowienia</a>
             <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa" target="_blank" rel="noopener"
                 class="nav__item pop" onclick="presenters()">Prezenterzy</a>
-              <a href="https://radioeuforia.panelradiowy.pl/" target="_blank" rel="noopener"
-                class="nav__item pop" onclick="panel()">Panel Prezentera</a>
+            <a href="https://radioeuforia.panelradiowy.pl/" target="_blank" rel="noopener" class="nav__item pop"
+                onclick="panel()">Panel Prezentera</a>
             <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja" target="_blank" rel="noopener"
                 class="nav__item pop" onclick="recrut()">Rekrutacja</a>
 
@@ -245,9 +250,8 @@
                         <li class="footer__box-list-item"> <a
                                 href="https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa" target="_blank"
                                 rel="noopener" onclick="presenters()">Prezenterzy</a></li>
-                        <li class="footer__box-list-item"> <a 
-                                href="https://radioeuforia.panelradiowy.pl/" target="_blank" rel="noopener"
-                                onclick="panel()">Panel Prezentera</a></li>
+                        <li class="footer__box-list-item"> <a href="https://radioeuforia.panelradiowy.pl/"
+                                target="_blank" rel="noopener" onclick="panel()">Panel Prezentera</a></li>
                         <li class="footer__box-list-item"><a
                                 href="https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja" target="_blank"
                                 rel="noopener" onclick="recrut()">Rekrutacja</a>
@@ -283,13 +287,14 @@
             </div>
             <i class="fa-solid fa-chevron-up"></i>
             <hr>
-            <p class="footer__bottom-text">Created By <span class="lillie">Lillie ♡</span> and <span class="eric">Eryk</span> &copy; <span class="footer__year"></span> Radio Euforia </p>
+            <p class="footer__bottom-text">Created By <span class="lillie">Lillie ♡</span> and <span
+                    class="eric">Eryk</span> &copy; <span class="footer__year"></span> Radio Euforia </p>
         </div>
 
     </footer>
 
-    <script src="./js/main.js" type="module"></script>
     <!-- <script src="./js/autumn.js"></script> -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
