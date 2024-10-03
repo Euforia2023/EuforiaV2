@@ -939,13 +939,13 @@ body {
 	100% {
 		transform: translateY(0);
 	}
-}/* AUTUMN */
-/* i.snowflake {
+/* }/* AUTUMN */
+ i.snowflake {
   position: absolute;
   top: -50px;
   animation: snow linear;
   z-index: 999;
-} */
+} 
 
 @keyframes snow {
 	to {
