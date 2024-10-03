@@ -112,6 +112,7 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 .player_btn-set {
