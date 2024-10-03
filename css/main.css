@@ -213,6 +213,10 @@ body {
 	color: rgb(255, 0, 255);
 }
 
+.apk__box .fa-android:visited {
+	color: #eee;
+}
+
 .apk__box p {
 	font-size: 1.4rem;
 	letter-spacing: 2px;
