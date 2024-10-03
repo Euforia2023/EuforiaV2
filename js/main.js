@@ -120,10 +120,10 @@ const handleCurrentYear = () => {
 // AUTUMN
 
  const createSnow = () => {
-	const leaf = [🍁, 🍂, 🍀];
+	const leaf = ['🍁', '🍂', '🍀'];
  	const snowflake = document.createElement('i')
  	snowflake.classList.add('snowflake')
- 	snowflake.textContent = Math.floor(Math.random() * leaf.lenght)
+ 	snowflake.textContent = Math.ceil(Math.random() * leaf.lenght)
 
  	snowflake.style.left = Math.random() * window.innerWidth + 'px'
  	snowflake.style.animationDuration = Math.random() * 5 + 3 + 's'
