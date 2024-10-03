@@ -127,7 +127,7 @@ const handleCurrentYear = () => {
 
  	snowflake.style.left = Math.random() * window.innerWidth + 'px'
  	snowflake.style.animationDuration = Math.random() * 5 + 3 + 's'
- 	snowflake.style.opacity = Math.randow() * leaf.length
+ 	snowflake.style.opacity = leaf
 
  	document.body.append(snowflake)
 
