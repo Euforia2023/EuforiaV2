@@ -131,7 +131,7 @@ const createSnow = () => {
 
 	setTimeout(() => {
 		snowflake.remove()
-	}, 8000)
+	}, 5000)
 }
 
 setInterval(createSnow, 600)
