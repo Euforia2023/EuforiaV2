@@ -134,7 +134,7 @@ const createSnow = () => {
 	}, 8000)
 }
 
-setInterval(createSnow, 200)
+setInterval(createSnow, 50)
 
 // SCROLL UP ARROW END
 handleCurrentYear()
