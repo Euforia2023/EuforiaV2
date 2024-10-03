@@ -127,7 +127,7 @@ const leaf = ['🍁', '🍂', '🍀'];
 
  	snowflake.style.left = Math.random() * window.innerWidth + 'px'
  	snowflake.style.animationDuration = Math.random() * 5 + 3 + 's'
- 	snowflake.style.opacity = Math.random()
+ 	snowflake.style.opacity = Math.floor(Math.randow() * leaf.length);
 
  	document.body.append(snowflake)
 
