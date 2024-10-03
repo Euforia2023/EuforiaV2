@@ -131,10 +131,10 @@ const handleCurrentYear = () => {
 
  	setTimeout(() => {
  		snowflake.remove()
- 	}, 5000)
+ 	}, 8000)
  }
 
- setInterval(createSnow, 600)
+ setInterval(createSnow, 700)
 
 // SCROLL UP ARROW END
 handleCurrentYear()
