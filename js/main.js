@@ -120,7 +120,7 @@ const handleCurrentYear = () => {
 // AUTUMN
 
  const createSnow = () => {
-	let leafs = ['🍁', '🍂', '🍀'];
+	let leafs = ['🍁', '🍂', '🍃'];
  	let leaf = leafs[Math.floor(Math.random() * leafs.length)]
  	const snowflake = document.createElement('i')
  	snowflake.classList.add('snowflake')
