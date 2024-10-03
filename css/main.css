@@ -950,7 +950,7 @@ i.snowflake {
 
 @keyframes snow {
 	to {
-		transform: translateY(50vh);
+		transform: translateY(65vh);
 	}
 }
 /*# sourceMappingURL=main.css.map */
