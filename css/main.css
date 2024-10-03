@@ -943,7 +943,9 @@ body {
 	100% {
 		transform: translateY(0);
 	}
-/* }/* AUTUMN */
+}
+
+/* AUTUMN */
  i.snowflake {
   position: absolute;
   top: -50px;
