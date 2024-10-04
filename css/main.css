@@ -194,7 +194,7 @@ body {
 	position: absolute;
 	top: 9em;
 	right: 2.5em;
-	transition: color .3s;
+	transition: color 0.3s;
 	z-index: 100;
 }
 
@@ -207,7 +207,7 @@ body {
 
 .apk__box .fa-android {
 	color: #eee;
-	transition: color .3s;
+	transition: color 0.3s;
 }
 
 .apk__box .fa-android:hover {
@@ -399,7 +399,7 @@ body {
 
 .section-heading {
 	position: relative;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	font-size: 3rem;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -439,6 +439,85 @@ body {
 }
 .presenters__text {
 	font-size: 1.4rem;
+}
+
+.presenters__title-days {
+	text-align: center;
+	font-size: 2.4rem;
+	margin-bottom: 20px;
+	font-family: 'Playwrite CU', cursive;
+	color: rgba(133, 1, 133, 0.842);
+}
+
+.presenters__btn-days {
+	position: relative;
+	background: transparent;
+	border: 1px solid purple;
+	border-radius: 8px;
+	padding: 10px 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(133, 1, 133, 0.842);
+	transition: background-color 0.3s;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.presenters__box-days {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6em 2em;
+	width: 80%;
+	border-radius: 8px;
+	background-color: rgba(187, 24, 252, 0.76);
+	color: #eee;
+	position: absolute;
+	top: 30em;
+	left: 0;
+	transform: translateX(-200%);
+	z-index: 999;
+}
+
+.presenters__box-days .fa-x {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	padding: 0.5em;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.presenters__box-link {
+	position: relative;
+	list-style-type: none;
+	width: 100%;
+	font-size: 3rem;
+	margin-bottom: 0.5em;
+	font-family: 'Playwrite CU', cursive;
+	animation: navItemAnimation 1s both;
+	cursor: pointer;
+}
+
+.presenters__box-link--active {
+	transform: translateX(0);
+}
+
+.presenters__box-link::before {
+	position: absolute;
+	top: 0;
+	left: -35px;
+	width: 3px;
+	height: 100%;
+	transform: scaleY(0);
+	background-color: #fff;
+	transition: transform 0.3s;
+	content: '';
+}
+
+.presenters__box-link:hover::before {
+	transform: scaleY(1);
 }
 
 /* ******************************** */
@@ -861,7 +940,7 @@ body {
 	.apk__box .fa-android {
 		font-size: 3rem;
 	}
-	
+
 	.apk__box p {
 		font-size: 1.4rem;
 		letter-spacing: 2px;
@@ -951,12 +1030,12 @@ body {
 }
 
 /* AUTUMN */
- i.snowflake {
-  position: absolute;
-  top: -50px;
-  animation: snow linear;
-  z-index: 999;
-} 
+i.snowflake {
+	position: absolute;
+	top: -50px;
+	animation: snow linear;
+	z-index: 999;
+}
 
 @keyframes snow {
 	to {
