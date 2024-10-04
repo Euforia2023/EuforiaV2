@@ -89,6 +89,17 @@ const handleDays = () => {
 			daysBox.classList.remove('presenters__box-link--active')
 		})
 	});
+	handleDaysItemAnimation()
+}
+
+const handleDaysItemAnimation = () => {
+ let delayTime = 0
+	
+	daysLinks.forEach(item => {
+		item.classList.toggle('nav-item-animation')
+		item.style.animationDelay = '.' + delayTime + 's'
+		delayTime++
+		})
 }
 
 const handleNavItemAnimation = () => {
