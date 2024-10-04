@@ -476,6 +476,7 @@ body {
 	position: absolute;
 	top: 30em;
 	left: 0;
+	transition: transform .3s;
 	transform: translateX(-200%);
 	z-index: 999;
 }
