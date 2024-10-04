@@ -17,6 +17,10 @@ const audioPlay = document.querySelector('.audio_play')
 const pop = document.querySelector('.pop')
 const textShow = document.querySelector('.ShowText')
 const footerYera = document.querySelector('.footer__year')
+const closeDays = document.querySelector('.fa-x')
+const daysLinks = document.querySelectorAll('.presenters__box-link')
+const daysBtn = document.querySelector('.presenters__btn-days')
+const daysBox = document.querySelector('.presenters__box-days')
 // const randFile = await import('./random')
 
 // POPUP WINDOW
@@ -77,6 +81,16 @@ const handlerNav = () => {
 	handleNavItemAnimation()
 }
 
+const handleDays = () => {
+	daysBox.classList.toggle('presenters__box-link--active')
+
+	daysLinks.forEach(item => {
+		item.addEventListener('click', () => {
+			daysBox.classList.remove('presenters__box-link--active')
+		})
+	});
+}
+
 const handleNavItemAnimation = () => {
 	let delayTime = 0
 
@@ -119,25 +133,25 @@ const handleCurrentYear = () => {
 
 // AUTUMN
 
- const createSnow = () => {
-	let leafs = ['🍁', '🍂', '🍃'];
- 	let leaf = leafs[Math.floor(Math.random() * leafs.length)]
- 	const snowflake = document.createElement('i')
- 	snowflake.classList.add('snowflake')
- 	snowflake.textContent = leaf
+const createSnow = () => {
+	let leafs = ['🍁', '🍂', '🍃']
+	let leaf = leafs[Math.floor(Math.random() * leafs.length)]
+	const snowflake = document.createElement('i')
+	snowflake.classList.add('snowflake')
+	snowflake.textContent = leaf
 
- 	snowflake.style.left = Math.random() * window.innerWidth + 'px'
- 	snowflake.style.animationDuration = Math.random() * 5 + 3 + 's'
- 	snowflake.style.opacity = Math.random()
+	snowflake.style.left = Math.random() * window.innerWidth + 'px'
+	snowflake.style.animationDuration = Math.random() * 5 + 3 + 's'
+	snowflake.style.opacity = Math.random()
 
- 	document.body.append(snowflake)
+	document.body.append(snowflake)
 
- 	setTimeout(() => {
- 		snowflake.remove()
- 	}, 8000)
- }
+	setTimeout(() => {
+		snowflake.remove()
+	}, 8000)
+}
 
- setInterval(createSnow, 1000)
+setInterval(createSnow, 1000)
 
 // SCROLL UP ARROW END
 handleCurrentYear()
@@ -145,3 +159,4 @@ navBtn.addEventListener('click', handlerNav)
 playerBtnStart.addEventListener('click', buttonOnclick)
 playerBtnStop.addEventListener('click', handlePlayersStop)
 scrollUpArrow.addEventListener('click', scrollStart)
+daysBtn.addEventListener('click', handleDays)
