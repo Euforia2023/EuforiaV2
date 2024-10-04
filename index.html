@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nowoczesne Radio Internetowe, stworzone przez ludzi, dla ludzi. Zapraszamy do wspólnej zabawy, dołącz do nas już dziś!">
+    <meta name="description"
+        content="Nowoczesne Radio Internetowe, stworzone przez ludzi, dla ludzi. Zapraszamy do wspólnej zabawy, dołącz do nas już dziś!">
     <title>Radio Euforia</title>
 
     <script src="https://kit.fontawesome.com/9cd6a9c545.js" crossorigin="anonymous"></script>
@@ -12,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
@@ -36,26 +38,18 @@
             </a>
         </button>
         <p>APP</p>
-    </div
-
-    <div class="player_btn">
-        <img src="./img/IMG_2017.png" alt="Logo Radia Euforia" class="logo-img">
-        <i class="fa-regular fa-circle-play player_btn-set btn1"></i>
-        <i class="fa-regular fa-circle-pause player_btn-set btn2"></i>
+    </div> 
+    <div class="player_btn"></div>
+    <img src="./img/IMG_2017.png" alt="Logo Radia Euforia" class="logo-img">
+    <i class="fa-regular fa-circle-play player_btn-set btn1"></i>
+    <i class="fa-regular fa-circle-pause player_btn-set btn2"></i>
     </div>
     <div class="player_box">
         <marquee class="user_play" direction="left" width="120" height="30" behavior="scroll" style="border:none">Gra
-            dla was: <?php include 'stats.php' ?>
+            dla was:
+            <?php include 'stats.php' ?>
         </marquee>
     </div>
-
-    <!-- <div class="player_box">
-        <i class="fa-solid fa-xmark"></i>
-
-        <iframe marginheight="0" marginwidth="0"
-            src="https://staty.portalradiowy.pl/statystyki/player-online/player1.php?na=&sl=&ip=ap3.slotex.pl&po=7296&kp=7934B1&ks=FFFFFF&kc=FFFFFF&tl=24&li=0&au=0&time=60&sslplayer=https%3A%2F%2Fs3.slotex.pl%2Fshoutcast%2F7510%2Fstream%3Fnocache%3D1726403151"
-            frameborder="0" scrolling="yes" width="100%" height="220"></iframe>
-    </div> -->
 
     <nav class="nav">
 
@@ -122,6 +116,31 @@
                 <h2 class="section-heading" id="ram">Ramówka</h2>
 
                 <div class="presenters__box">
+                    <h3 class="presenters__title-days">Wybierz dzień tygodnia: </h3>
+                    <button class="presenters__btn-days btn-special-animation">
+                        <span class="bar one"></span>
+                        <span class="bar two"></span>
+                        <span class="bar three"></span>
+                        <span class="bar four"></span>
+                        <span class="bar five"></span>
+                        wybierz
+                    </button>
+                </div>
+
+                <div class="presenters__box-days">
+                    <i class="fa-solid fa-x"></i>
+                    <div class="presenters__box-day">
+                        <li class="presenters__box-link">Poniedziałek</li>
+                        <li class="presenters__box-link">wtorek</li>
+                        <li class="presenters__box-link">Środa</li>
+                        <li class="presenters__box-link">czwartek</li>
+                        <li class="presenters__box-link">piątek</li>
+                        <li class="presenters__box-link">sobota</li>
+                        <li class="presenters__box-link">niedziela</li>
+                    </div>
+                </div>
+
+                <!-- <div class="presenters__box">
 
                     <div class="presenters__box-img">
                         <h3 class="presenters__title">Poniedziałek</h3>
@@ -218,7 +237,7 @@
                         <p class="presenters__text"></p>
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
 
@@ -301,7 +320,6 @@
 
     </footer>
 
-    <!-- <script src="./js/autumn.js"></script> -->
     <script src="./js/main.js"></script>
 </body>
 
