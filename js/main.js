@@ -12,7 +12,7 @@ const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
 const playerBtnStart = document.querySelector('.fa-circle-play')
 const playerBtnStop = document.querySelector('.fa-circle-pause')
-const scrollUpArrow = document.querySelector('.fa-chevron-up')
+const scrollUpArrow = document.querySelector('.fa-angles-up')
 const audioPlay = document.querySelector('.audio_play')
 const pop = document.querySelector('.pop')
 const textShow = document.querySelector('.ShowText')
@@ -20,7 +20,21 @@ const footerYera = document.querySelector('.footer__year')
 const closeDays = document.querySelector('.fa-x')
 const daysLinks = document.querySelectorAll('.presenters__box-link')
 const daysBtn = document.querySelector('.presenters__btn-days')
-const daysBox = document.querySelector('.presenters__box-days')
+const monday = document.querySelector('.day-one')
+const tuesday = document.querySelector('.day-two')
+const wendesday = document.querySelector('.day-three')
+const thirsday = document.querySelector('.day-four')
+const friday = document.querySelector('.day-five')
+const saturday = document.querySelector('.day-six')
+const sunday = document.querySelector('.day-seven')
+const someBox = document.querySelector('.pon')
+const someBox2 = document.querySelector('.wt')
+const someBox3 = document.querySelector('.sr')
+const someBox4 = document.querySelector('.czw')
+const someBox5 = document.querySelector('.pt')
+const someBox6 = document.querySelector('.sob')
+const someBox7 = document.querySelector('.nied')
+const allDays = document.querySelectorAll('.item')
 // const randFile = await import('./random')
 
 // POPUP WINDOW
@@ -88,18 +102,18 @@ const handleDays = () => {
 		item.addEventListener('click', () => {
 			daysBox.classList.remove('presenters__box-link--active')
 		})
-	});
+	})
 	handleDaysItemAnimation()
 }
 
 const handleDaysItemAnimation = () => {
- let delayTime = 0
-	
+	let delayTime = 0
+
 	daysLinks.forEach(item => {
 		item.classList.toggle('nav-item-animation')
 		item.style.animationDelay = '.' + delayTime + 's'
 		delayTime++
-		})
+	})
 }
 
 const handleNavItemAnimation = () => {
@@ -164,10 +178,55 @@ const createSnow = () => {
 
 setInterval(createSnow, 1000)
 
+// LIST
+$(document).ready(function () {
+	$('.dropdown').click(function () {
+		$('.menu').toggleClass('showMenu')
+		$('.menu > li').click(function () {
+			$('.dropdown > p').html($(this).html())
+			$('.menu').removeClass('showMenu')
+		})
+	})
+})
+
+const dayChoser = () => {
+	allDays.forEach(el => {
+		el.addEventListener('click', function () {
+			if (el == monday) {
+				someBox.classList.toggle('box--active')
+			} else if (el == tuesday) {
+				someBox2.classList.toggle('box--active')
+			} else if (el == wendesday) {
+				someBox3.classList.toggle('box--active')
+			} else if (el == thirsday) {
+				someBox4.classList.toggle('box--active')
+			} else if (el == friday) {
+				someBox5.classList.toggle('box--active')
+			} else if (el == saturday) {
+				someBox6.classList.toggle('box--active')
+			} else if (el == sunday) {
+				someBox7.classList.toggle('box--active')
+			}
+		})
+	})
+
+	// choseDay.addEventListener('click', () => {
+	// 	someBox.classList.remove('presenters__ram-box--active')
+	// })
+	// console.log('Works')
+}
+dayChoser()
+
+// const dayChoserV2 = () => {
+// 	const daysTab = [monday]
+
+// 	if ()
+// }
 // SCROLL UP ARROW END
 handleCurrentYear()
 navBtn.addEventListener('click', handlerNav)
 playerBtnStart.addEventListener('click', buttonOnclick)
 playerBtnStop.addEventListener('click', handlePlayersStop)
 scrollUpArrow.addEventListener('click', scrollStart)
-daysBtn.addEventListener('click', handleDays)
+// daysBtn.addEventListener('click', handleDays)
+// monday.addEventListener('click', dayChoser)
