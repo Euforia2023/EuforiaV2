@@ -534,6 +534,7 @@ body {
 	display: none;
 	width: 400px;
 	height: 200px;
+	margin-bottom: 0.5em;
 	background-color: #222;
 	transition: display 0.3s;
 }
