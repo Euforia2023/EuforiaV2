@@ -78,7 +78,7 @@
 	z-index: 100;
 }
 
-.fa-chevron-up {
+.fa-angles-up {
 	position: absolute;
 	bottom: 50px;
 	right: 13px;
@@ -90,7 +90,7 @@
 	z-index: 1000;
 }
 
-.fa-chevron-up:hover {
+.fa-angles-up:hover {
 	color: rgba(253, 67, 253, 0.842);
 	border-color: rgba(253, 67, 253, 0.842);
 	cursor: pointer;
@@ -418,7 +418,10 @@ body {
 .presenters__box {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin: 2em 0;
+	position: relative;
 }
 
 .presenters__box-text > .presenters__title {
@@ -476,7 +479,7 @@ body {
 	position: absolute;
 	top: 30em;
 	left: 0;
-	transition: transform .3s;
+	transition: transform 0.3s;
 	transform: translateX(-200%);
 	z-index: 999;
 }
@@ -519,6 +522,167 @@ body {
 
 .presenters__box-link:hover::before {
 	transform: scaleY(1);
+}
+
+.pon,
+.wt,
+.sr,
+.czw,
+.pt,
+.sob,
+.nied {
+	display: none;
+	width: 400px;
+	height: 200px;
+	background-color: #222;
+	transition: display 0.3s;
+}
+
+.box--active {
+	display: block;
+}
+
+/* LISTA DNI */
+.dropholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 322px;
+	height: 60px;
+	margin: 40px auto;
+	padding: 0 0 0 20px;
+	border-radius: 10px;
+	font: 18px arial;
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;
+	border: 1px solid #9b0db9;
+	animation: move 3s ease-in-out infinite;
+	position: relative;
+	z-index: 5000;
+}
+.dropholder:hover,
+.dropholder:hover:after {
+	animation-play-state: paused;
+}
+.dropholder:after {
+	content: '';
+	position: absolute;
+	width: 250px;
+	height: 5px;
+	background: rgba(0, 0, 0, 0);
+	display: block;
+	top: 100px;
+	left: 37px;
+	margin: auto;
+	border-radius: 50%;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+	animation: moveShadow 3s ease-in-out infinite;
+}
+p {
+	text-align: center;
+}
+.dropdown > p {
+	font-size: 16px;
+	margin-right: 60px;
+	/* margin-left: 10px; */
+}
+.dropdown,
+.dropholder {
+	background: linear-gradient(#da4df8, #9b0db9);
+}
+.dropdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+	width: 208px;
+	padding: 0 0 0 20px;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+	height: 58px;
+	border-left: 1px solid #da4df8;
+	position: relative;
+}
+.dropdown:hover {
+	background: linear-gradient(#da4df8, #b11cd0);
+}
+.dropdown:after {
+	content: '▾';
+	font-size: 18px;
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	display: block;
+}
+
+.menu {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	width: 213px;
+	transform-style: preserve-3d;
+	transform: rotatey(180deg) rotateX(5deg) translatey(100px);
+	backface-visibility: hidden;
+	background: purple;
+	border: 2px solid purple;
+	border-radius: 8px;
+	transition: all 0.8s;
+	opacity: 0;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 5000;
+}
+.menu li {
+	padding: 10px 10px;
+	border-bottom: 1px dotted #fff;
+	color: #e8f8ff;
+	transition: all 0.3s;
+}
+.menu li:hover {
+	background: rgba(231, 8, 231, 0.842);
+	padding-left: 20px;
+}
+.menu li:last-child {
+	border: none;
+}
+
+.showMenu {
+	opacity: 1;
+	transform: rotateX(0deg) translatey(0px);
+}
+li > i {
+	float: left;
+	padding-top: 3px;
+	padding-right: 8px;
+}
+p > i {
+	position: relative;
+	top: 2px;
+}
+i {
+	opacity: 0.7;
+}
+@keyframes move {
+	0%,
+	100% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes moveShadow {
+	0%,
+	100% {
+		transform: translateY(10px);
+		opacity: 0.4;
+	}
+	50% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 /* ******************************** */
@@ -742,7 +906,7 @@ body {
 	}
 	.presenters__box {
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 	.presenters__box-text {
 		width: 55%;
@@ -893,7 +1057,7 @@ body {
 		margin-left: 7em;
 	}
 
-	.fa-chevron-up {
+	.fa-angles-up {
 		right: 40px;
 	}
 
