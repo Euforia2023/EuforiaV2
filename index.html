@@ -38,7 +38,7 @@
             </a>
         </button>
         <p>APP</p>
-    </div> 
+    </div>
     <div class="player_btn"></div>
     <img src="./img/IMG_2017.png" alt="Logo Radia Euforia" class="logo-img">
     <i class="fa-regular fa-circle-play player_btn-set btn1"></i>
@@ -47,7 +47,7 @@
     <div class="player_box">
         <marquee class="user_play" direction="left" width="120" height="30" behavior="scroll" style="border:none">Gra
             dla was:
-            <?php include 'stats.php' ?>
+
         </marquee>
     </div>
 
@@ -116,18 +116,44 @@
                 <h2 class="section-heading" id="ram">Ramówka</h2>
 
                 <div class="presenters__box">
-                    <h3 class="presenters__title-days">Wybierz dzień tygodnia: </h3>
-                    <button class="presenters__btn-days btn-special-animation">
-                        <span class="bar one"></span>
-                        <span class="bar two"></span>
-                        <span class="bar three"></span>
-                        <span class="bar four"></span>
-                        <span class="bar five"></span>
-                        wybierz
-                    </button>
+                    <div class="presenters__box-daysHolder">
+
+                        <h3 class="presenters__title-days">Wybierz dzień tygodnia: </h3>
+                        <!-- <button class="presenters__btn-days btn-special-animation">
+                            wybierz
+                        </button> -->
+                        <div class="dropholder">
+                            <p>Wybierz</p>
+                            <div class="dropdown">
+                                <p><i class="fa-solid fa-list-check"></i> Dzień tygodnia</p>
+                            </div>
+                            <ul class="menu">
+                                <li class="item day-one"><i class="fa-regular fa-square-check"></i> Poniedziałek</li>
+                                <li class="item day-two"><i class="fa-regular fa-square-check"></i> Wtorek</li>
+                                <li class="item day-three"><i class="fa-regular fa-square-check"></i> Środa</li>
+                                <li class="item day-four"><i class="fa-regular fa-square-check"></i> Czwartek</li>
+                                <li class="item day-five"><i class="fa-regular fa-square-check"></i> Piątek</li>
+                                <li class="item day-six"><i class="fa-regular fa-square-check"></i> Sobota</li>
+                                <li class="item day-seven"><i class="fa-regular fa-square-check"></i> Niedziela</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="daysHolder">
+
+                        <div class="pon">1</div>
+                        <div class="wt">2</div>
+                        <div class="sr">3</div>
+                        <div class="czw">4</div>
+                        <div class="pt">5</div>
+                        <div class="sob">6</div>
+                        <div class="nied">7</div>
+                    </div>
+
                 </div>
 
-                <div class="presenters__box-days">
+
+                <!-- <div class="presenters__box-days">
                     <i class="fa-solid fa-x"></i>
                     <div class="presenters__box-day">
                         <li class="presenters__box-link">Poniedziałek</li>
@@ -138,7 +164,7 @@
                         <li class="presenters__box-link">sobota</li>
                         <li class="presenters__box-link">niedziela</li>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- <div class="presenters__box">
 
@@ -312,7 +338,7 @@
 
 
             </div>
-            <i class="fa-solid fa-chevron-up"></i>
+            <i class="fa-solid fa-angles-up"></i>
             <hr>
             <p class="footer__bottom-text">Created By <span class="lillie">Lillie ♡</span> and <span
                     class="eric">Eryk</span> &copy; <span class="footer__year"></span> Radio Euforia </p>
