@@ -524,6 +524,10 @@ body {
 	transform: scaleY(1);
 }
 
+.daysHolder {
+	padding: 0 0.5em;
+}
+
 .pon,
 .wt,
 .sr,
