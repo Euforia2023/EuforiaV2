@@ -401,9 +401,9 @@ body {
 	position: relative;
 	margin-bottom: 1em;
 	font-size: 3rem;
-	font-weight: 400;
+	font-weight: 600;
 	font-family: 'Playwrite CU', cursive;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-align: center;
 	color: rgba(231, 8, 231, 0.842);
 	letter-spacing: 2px;
@@ -417,7 +417,7 @@ body {
 /* PRESENTERS */
 /* ******************************** */
 .presenters {
-	background-color: #f9f8f8;
+	background-color: ghostwhite;
 }
 .presenters__box {
 	display: flex;
