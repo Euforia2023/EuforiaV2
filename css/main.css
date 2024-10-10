@@ -528,8 +528,13 @@ body {
 	transform: scaleY(1);
 }
 
+.presenters__box-daysHolder {
+	margin-left: 8em;
+}
+
 .daysHolder {
 	padding: 0 0.5em;
+	margin-left: 40em;
 }
 
 .pon,
@@ -920,7 +925,8 @@ i {
 	}
 	.presenters__box {
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: flex-start;
+		margin-left: 12em;
 	}
 	.presenters__box-text {
 		width: 55%;
@@ -1004,7 +1010,7 @@ i {
 		font-size: 3rem;
 	} */
 	.presenters__box {
-		flex-direction: row-reverse;
+		flex-direction: row;
 	}
 	.presenters__text {
 		font-size: 1.8rem;
@@ -1159,7 +1165,7 @@ i {
 		font-size: 4.8rem;
 	}
 	.section-padding {
-		padding: 10em 2em;
+		padding: 2em 2em 4em 2em;
 	}
 
 	.logo_footer-img {
