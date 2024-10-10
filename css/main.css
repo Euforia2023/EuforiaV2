@@ -14,7 +14,7 @@
 	position: absolute;
 	height: 40px;
 	width: 60%;
-	background-color: ghostwhite;
+	background-color: gainsboro;
 }
 .white-block-left {
 	bottom: 0;
@@ -417,7 +417,7 @@ body {
 /* PRESENTERS */
 /* ******************************** */
 .presenters {
-	background-color: ghostwhite;
+	background-color: gainsboro;
 }
 .presenters__box {
 	display: flex;
@@ -919,7 +919,7 @@ i {
 		left: 145px;
 	}
 	.presenters__box {
-		flex-direction: row-reverse;
+		flex-direction: row;
 		justify-content: space-around;
 	}
 	.presenters__box-text {
@@ -1003,6 +1003,9 @@ i {
 	.header__medias-btn {
 		font-size: 3rem;
 	} */
+	.presenters__box {
+		flex-direction: row-reverse;
+	}
 	.presenters__text {
 		font-size: 1.8rem;
 	}
