@@ -402,7 +402,7 @@ body {
 	margin-bottom: 1em;
 	font-size: 3rem;
 	font-weight: 600;
-	font-family: 'Playwrite CU', cursive;
+	font-family: 'Playwrite CU', cursive; 
 	/*text-transform: uppercase;*/
 	text-align: center;
 	color: rgba(231, 8, 231, 0.842);
@@ -901,6 +901,10 @@ i {
 	.header__medias-btn {
 		margin: 0.5em;
 	}
+	.section-heading {
+		text-align-last: left;
+		margin-left: 2em;
+	}
 	.logo-img {
 		width: 140px;
 		height: 140px;
@@ -915,7 +919,7 @@ i {
 		left: 145px;
 	}
 	.presenters__box {
-		flex-direction: row;
+		flex-direction: row-reverse;
 		justify-content: space-around;
 	}
 	.presenters__box-text {
