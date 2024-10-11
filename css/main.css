@@ -1197,10 +1197,12 @@ i {
 
 	.daysHolder {
 		position: absolute;
+		margin-top: 22em;
 		margin-left: 60em;
 	}
 	.presenters__box-daysHolder {
-		margin-left: -23em;
+		margin-left: -22em;
+		margin-top: 4em;
 	}
 	.presenters__box-text {
 		display: flex;
@@ -1215,6 +1217,16 @@ i {
 	.presenters__text {
 		font-size: 2.2rem;
 	}
+	.pon,
+	.wt,
+	.sr,
+	.czw,
+	.pt,
+	.sob,
+	.nied {
+		width: 500px;
+		height: 250px;
+	}
 	.hero-img {
 		padding: 25rem 2em;
 		background-image: url('../img/purple_1920.jpg');
@@ -1228,7 +1240,7 @@ i {
 	}
 	.section-heading {
 		font-size: 4.8rem;
-		top: 90%;
+		top: 95%;
 		left: 1%;
 	}
 	.section-padding {
