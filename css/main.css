@@ -532,6 +532,10 @@ body {
 	padding: 0 0.5em;
 }
 
+.iframe > .szerokosc {
+	width: 350px;
+}
+
 .pon,
 .wt,
 .sr,
@@ -540,12 +544,12 @@ body {
 .sob,
 .nied {
 	display: none;
-	width: 350px;
-	height: 175px;
+	/* width: 600px;
+	height: 300px; */
 	margin-bottom: 0.5em;
 	padding: 1em;
 	color: #eee;
-	background-color: #222;
+	/* background-color: #222; */
 	transition: display 0.3s;
 }
 
