@@ -1197,11 +1197,11 @@ i {
 
 	.daysHolder {
 		position: absolute;
-		margin-top: 22em;
+		margin-top: 23em;
 		margin-left: 60em;
 	}
 	.presenters__box-daysHolder {
-		margin-left: -22em;
+		margin-left: -10em;
 		margin-top: 4em;
 	}
 	.presenters__box-text {
@@ -1241,7 +1241,7 @@ i {
 	.section-heading {
 		font-size: 4.8rem;
 		top: 95%;
-		left: 1%;
+		left: 9%;
 	}
 	.section-padding {
 		padding: 2em 2em 4em 2em;
