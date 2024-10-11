@@ -194,6 +194,12 @@ const dayChoser = () => {
 		el.addEventListener('click', function () {
 			if (el == monday) {
 				someBox.classList.toggle('box--active')
+				someBox2.classList.remove('box--active')
+				someBox3.classList.remove('box--active')
+				someBox4.classList.remove('box--active')
+				someBox5.classList.remove('box--active')
+				someBox6.classList.remove('box--active')
+				someBox7.classList.remove('box--active')
 			} else if (el == tuesday) {
 				someBox2.classList.toggle('box--active')
 				someBox.classList.remove('box--active')
