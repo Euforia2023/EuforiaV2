@@ -402,7 +402,7 @@ body {
 	margin-bottom: 1em;
 	font-size: 3rem;
 	font-weight: 600;
-	font-family: 'Playwrite CU', cursive; 
+	font-family: 'Playwrite CU', cursive;
 	/*text-transform: uppercase;*/
 	text-align: center;
 	color: rgba(231, 8, 231, 0.842);
@@ -528,13 +528,8 @@ body {
 	transform: scaleY(1);
 }
 
-.presenters__box-daysHolder {
-	margin-left: 8em;
-}
-
 .daysHolder {
 	padding: 0 0.5em;
-	margin-left: 40em;
 }
 
 .pon,
@@ -545,8 +540,8 @@ body {
 .sob,
 .nied {
 	display: none;
-	width: 400px;
-	height: 200px;
+	width: 350px;
+	height: 175px;
 	margin-bottom: 0.5em;
 	padding: 1em;
 	color: #eee;
@@ -924,9 +919,9 @@ i {
 		left: 145px;
 	}
 	.presenters__box {
-		flex-direction: row;
-		justify-content: flex-start;
-		margin-left: 12em;
+		flex-direction: column;
+		justify-content: flex-startc;
+		margin-left: -10em;
 	}
 	.presenters__box-text {
 		width: 55%;
@@ -953,6 +948,49 @@ i {
 	.presenters__img {
 		margin-bottom: 0;
 		max-height: 300px;
+	}
+	.presenters__box-daysHolder {
+		margin-left: 14em;
+		position: absolute;
+		top: 1%;
+		left: 0;
+	}
+	.daysHolder {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.pon,
+	.wt,
+	.sr,
+	.czw,
+	.pt,
+	.sob,
+	.nied {
+		width: 400px;
+		height: 200px;
+	}
+	.section-heading {
+		position: absolute;
+		top: 60%;
+		left: 0;
+	}
+
+	.section-padding {
+		height: auto;
+		min-height: 50vh;
+	}
+
+	.daysHolder {
+		margin-top: 20em;
+		margin-left: 7em;
+		margin-right: auto;
+	}
+
+	.presenters__title-days {
+		font-size: 3.2rem;
 	}
 	.footer__bottom-text {
 		padding: 2em;
@@ -1003,6 +1041,10 @@ i {
 		font-size: 1.4rem;
 	}
 
+	.section-heading {
+		margin-left: 1em;
+	}
+
 	/* .header__medias {
 		top: 11em;
 	}
@@ -1010,7 +1052,8 @@ i {
 		font-size: 3rem;
 	} */
 	.presenters__box {
-		flex-direction: row;
+		flex-direction: column;
+		margin-left: 8em;
 	}
 	.presenters__text {
 		font-size: 1.8rem;
@@ -1020,6 +1063,19 @@ i {
 	}
 	.presenters__box-text {
 		margin-bottom: 12.5em;
+	}
+	.presenters__box-daysHolder {
+		margin-left: -6em;
+	}
+	.pon,
+	.wt,
+	.sr,
+	.czw,
+	.pt,
+	.sob,
+	.nied {
+		width: 600px;
+		height: 300px;
 	}
 	.hero-img {
 		padding: 25rem 2em;
@@ -1136,6 +1192,15 @@ i {
 	}
 	.presenters__box {
 		margin: 5em 0;
+		margin-left: 10em;
+	}
+
+	.daysHolder {
+		position: absolute;
+		margin-left: 60em;
+	}
+	.presenters__box-daysHolder {
+		margin-left: -23em;
 	}
 	.presenters__box-text {
 		display: flex;
@@ -1163,6 +1228,8 @@ i {
 	}
 	.section-heading {
 		font-size: 4.8rem;
+		top: 90%;
+		left: 1%;
 	}
 	.section-padding {
 		padding: 2em 2em 4em 2em;
