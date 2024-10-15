@@ -1285,16 +1285,20 @@ i {
 @media (min-width: 1298px) {
 	.logo_footer-img {
 		display: none;
-		position: absolute;
-		left: 0;
-		bottom: 0;
 	}
 
 	.footer__img {
 		display: block;
 		position: absolute;
-		bottom: 75%;left: 4%;
+		width: 60px;
+		height: 60px;
+		bottom: 11%;
+		left: 4%;
 		z-index: 99999;
+	}
+
+	.footer .wrapper {
+		width: 798px;
 	}
 
 	.footer__boxes {
