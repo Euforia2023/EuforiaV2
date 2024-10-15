@@ -1261,8 +1261,8 @@ i {
 	}
 
 	.logo_footer-img {
-		left: 100%;
-		bottom: 102px;
+		left: 0%;
+        bottom: 23px;
 	}
 
 	.footer__box-title {
@@ -1283,7 +1283,7 @@ i {
 }
 
 @media (min-width: 1298px) {
-	.logo_footer-img {
+	/* .logo_footer-img {
 		display: none;
 	}
 
@@ -1295,7 +1295,7 @@ i {
         bottom: 36.5%;
         left: 61.8%;
 		z-index: 99999;
-	}
+	} */
 
 	.footer .wrapper {
 		width: 798px;
