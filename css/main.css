@@ -798,6 +798,10 @@ i {
 	background-color: #2e2e2e;
 	overflow: hidden;
 }
+
+.footer__img {
+	display: none;
+}
 .footer .wrapper {
 	padding: 6em 2em 2em;
 }
@@ -1160,6 +1164,9 @@ i {
 	}
 }
 @media (min-width: 992px) {
+	.white-block {
+		height: 60px;
+	}
 	.header-btn {
 		top: 50px;
 		right: 50px;
@@ -1266,9 +1273,33 @@ i {
 		max-width: 1000px;
 	}
 
+	.footer__img {
+		display: none;
+	}
+
 	/* .footer hr {
 		width: 100%;
 	} */
+}
+
+@media (min-width: 1298px) {
+	.logo_footer-img {
+		display: none;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.footer__img {
+		display: block;
+		position: absolute;
+		bottom: 75%;left: 4%;
+		z-index: 99999;
+	}
+
+	.footer__boxes {
+		justify-content: space-between;
+	}
 }
 
 /* KEYFRAMES */
