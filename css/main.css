@@ -418,6 +418,7 @@ body {
 /* ******************************** */
 .presenters {
 	background-color: gainsboro;
+	overflow-x: clip;
 }
 .presenters__box {
 	display: flex;
@@ -530,10 +531,11 @@ body {
 
 .daysHolder {
 	padding: 0 0.5em;
+	
 }
 
-.iframe > .szerokosc {
-	width: 350px;
+.iframe {
+	width: 100%;
 }
 
 .pon,
