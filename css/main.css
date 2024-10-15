@@ -1261,8 +1261,8 @@ i {
 	}
 
 	.logo_footer-img {
-		left: 0%;
-        bottom: 23px;
+		left: 100%;
+		bottom: 102px;
 	}
 
 	.footer__box-title {
@@ -1304,6 +1304,10 @@ i {
 	.footer__boxes {
 		justify-content: space-between;
 	}
+	.logo_footer-img {
+		left: 0%;
+        bottom: 23px;
+	
 }
 
 /* KEYFRAMES */
