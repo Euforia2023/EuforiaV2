@@ -576,8 +576,7 @@ body {
 	border: 1px solid #9b0db9;
 	animation: move 3s ease-in-out infinite;
 	position: relative;
-	z-index: 5000;
-}
+	z-index:100;
 .dropholder:hover,
 .dropholder:hover:after {
 	animation-play-state: paused;
@@ -647,7 +646,7 @@ body {
 	opacity: 0;
 	overflow: hidden;
 	cursor: pointer;
-	z-index: 5000;
+	z-index:100;
 }
 .menu li {
 	padding: 10px 10px;
