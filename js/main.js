@@ -1,12 +1,3 @@
-//import {
-//randomMonday,
-//randomTuesday,
-//=randomTextMonday,
-//randomTextTuesday,
-//randomTextWendesday,
-//randomTextThirsday,
-//} from './components.js'
-
 const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
@@ -70,10 +61,6 @@ const buttonOnclick = () => {
 
 	// handlePlayersStart()
 }
-// const handlePlayersStart = () => {
-// 	playerBtnStart.style.display = 'none'
-// 	playerBtnStop.style.display = 'block'
-// }
 
 const handlePlayersStop = () => {
 	playerBtnStart.style.display = 'block'
@@ -85,10 +72,15 @@ const handlePlayersStop = () => {
 // NAV
 const handlerNav = () => {
 	nav.classList.toggle('nav--active')
-
+	if (nav.classList.contains('nav--active')) {
+		document.body.style.overflow = 'hidden'
+	} else {
+		document.body.style.overflow = 'visible'
+	}
 	allNavItems.forEach(item => {
 		item.addEventListener('click', () => {
 			nav.classList.remove('nav--active')
+			document.body.style.overflow = 'visible'
 		})
 	})
 
@@ -132,23 +124,10 @@ window.onscroll = function () {
 	scrollUp()
 }
 
-// function scrollUp() {
-// 	if (scrollUpArrow.style.bottom == 0) {
-// 		scrollUpArrow.style.display = 'flex'
-// 	} else {
-// 		scrollUpArrow.style.display = 'none'
-// 	}
-// }
-
 function scrollStart() {
 	document.body.scrollTop = 0
 	document.documentElement.scrollTop = 0
 }
-
-// RANDOM TEXT
-// onload = function () {
-// 	randomTextMonday(), randomTextTuesday(), randomTextWendesday(), randomTextThirsday()
-// }
 
 // FOOTER YEAR
 const handleCurrentYear = () => {
@@ -251,19 +230,52 @@ const dayChoser = () => {
 			}
 		})
 	})
-
-	// choseDay.addEventListener('click', () => {
-	// 	someBox.classList.remove('presenters__ram-box--active')
-	// })
-	// console.log('Works')
 }
 dayChoser()
 
-// const dayChoserV2 = () => {
-// 	const daysTab = [monday]
+// CHRISTMAS
+const close_christmas = document.querySelector('.p_close');
+const chr_window = document.querySelector('.christmas_wrapper')
 
-// 	if ()
-// }
+var current = 'On-line'
+var montharray = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+var zostalo = document.getElementById('zostalo')
+function countdown(yr, m, d) {
+	theyear = yr
+	themonth = m
+	theday = d
+	var today = new Date()
+	var todayy = today.getFullYear()
+	if (todayy < 1000) todayy += 1900
+	var todaym = today.getMonth()
+	var todayd = today.getDate()
+	var todayh = today.getHours()
+	var todaymin = today.getMinutes()
+	var todaysec = today.getSeconds()
+	var todaystring = montharray[todaym] + ' ' + todayd + ', ' + todayy + ' ' + todayh + ':' + todaymin + ':' + todaysec
+	futurestring = montharray[m - 1] + ' ' + d + ', ' + yr
+	dd = Date.parse(futurestring) - Date.parse(todaystring)
+	dday = Math.floor((dd / (60 * 60 * 1000 * 24)) * 1)
+	dhour = Math.floor(((dd % (60 * 60 * 1000 * 24)) / (60 * 60 * 1000)) * 1)
+	dmin = Math.floor((((dd % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) / (60 * 1000)) * 1)
+	dsec = Math.floor(((((dd % (60 * 60 * 1000 * 24)) % (60 * 60 * 1000)) % (60 * 1000)) / 1000) * 1)
+	if (dday <= 0 && dhour <= 0 && dmin <= 0) {
+		zostalo.innerText = current
+		return
+	} else if (dday <= 0 && dhour <= 0) {
+		zostalo.innerText = dmin + ' minut, i ' + dsec + ' sekund'
+		setTimeout('countdown(theyear,themonth,theday)', 1000)
+	} else if (dday <= 0) {
+		zostalo.innerText = dhour + ' godzin, ' + dmin + ' minut, i ' + dsec + ' sekund'
+		setTimeout('countdown(theyear,themonth,theday)', 1000)
+	} else {
+		zostalo.innerText = dday + ' Dni, ' + dhour + ' godzin, ' + dmin + ' minut, i ' + dsec + ' sekund'
+		setTimeout('countdown(theyear,themonth,theday)', 1000)
+	}
+}
+
+window.document.addEventListener('DOMContentLoaded', countdown(2024, 12, 24))
+
 // SCROLL UP ARROW END
 handleCurrentYear()
 navBtn.addEventListener('click', handlerNav)
