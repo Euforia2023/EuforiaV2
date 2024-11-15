@@ -294,7 +294,7 @@ body {
 	width: 100%;
 	text-align: center;
 	color: #fff;
-	background-image: url('./img/gradient.webp');
+	background-image: url('../img/gradient.webp');
 	background-size: cover;
 	background-position: center;
 	background-attachment: scroll;
@@ -672,7 +672,7 @@ i {
 .hero-img {
 	position: relative;
 	padding: 20em 2em;
-	background-image: url('./img/purple_640.webp');
+	background-image: url('../img/purple_640.webp');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -1107,7 +1107,7 @@ i {
 	}
 	.hero-img {
 		padding: 25rem 2em;
-		background-image: url('./img/purple_1280.webp');
+		background-image: url('../img/purple_1280.webp');
 	}
 	.hero-img hr {
 		margin: 0 auto;
@@ -1256,7 +1256,7 @@ i {
 	}
 	.hero-img {
 		padding: 25rem 2em;
-		background-image: url('./img/purple_1920.webp');
+		background-image: url('../img/purple_1920.webp');
 	}
 	.hero-img__title {
 		font-size: 7.2rem;
