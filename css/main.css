@@ -1370,6 +1370,7 @@ i.snowflake {
 	max-width: 480px;
 	background-image: url('../img/christmas-5740761_640.png');
 	background-size: cover;
+	border-radius: 8px;
 	margin: 0 auto;
 }
 .christmas_wrapper .container {
