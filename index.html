@@ -18,13 +18,37 @@
 
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
 
 </head>
 
 <body>
+
+    <div class="wr">
+
+        <div class="christmas_wrapper">
+            <div class="container">
+                <div class="timing">
+                    <h1 class="timing__title">Do Świąt Bożego Narodzenia pozostało:</h1>
+                    <div id="zostalo"></div>
+                    <!-- <br>
+                    <div class="LastTime">
+                        <span id="Dni">43</span>
+                        <p>dni,</p>
+                        <span id="Godziny">7</span>
+                        <p>godziny,</p>
+                        <span id="Minuty">37</span>
+                        <p>minut,</p>
+                        <span id="Sekundy">54</span>
+                        <p>sekund,</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <button class="burger-btn">
         <div class="burger-btn__box">
             <div class="burger-btn__bars"></div>
@@ -40,13 +64,14 @@
         <p>APP</p>
     </div>
     <div class="player_btn"></div>
-    <img src="./img/IMG_2017.png" alt="Logo Radia Euforia" class="logo-img">
+    <img src="./img/IMG_2017.webp" alt="Logo Radia Euforia" class="logo-img">
     <i class="fa-regular fa-circle-play player_btn-set btn1"></i>
     <i class="fa-regular fa-circle-pause player_btn-set btn2"></i>
     </div>
     <div class="player_box">
         <marquee class="user_play" direction="left" width="120" height="30" behavior="scroll" style="border:none">Gra
             dla was:
+            <?php include 'stats.php' ?>
 
         </marquee>
     </div>
@@ -81,7 +106,8 @@
             </div>
             <div class="header__medias-box">
                 <button class="header__medias-btn list">
-                    <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=lista" target="_blank" rel="noopener"><i class="fa-solid fa-list"></i></a>
+                    <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=lista" target="_blank"
+                        rel="noopener"><i class="fa-solid fa-list"></i></a>
                 </button>
                 <p>Lista Przebojów</p>
             </div>
@@ -141,25 +167,39 @@
                     <div class="daysHolder">
 
                         <div class="pon">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=1" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=1"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                         <div class="wt">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=2" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=2"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                         <div class="sr">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=3" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=3"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                         <div class="czw">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=4" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=4"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                         <div class="pt">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=5" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=5"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                         <div class="sob">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=6" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=6"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                         <div class="nied">
-                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=7" scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no" width="490" height="300"></iframe>
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=7"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
                         </div>
                     </div>
 
@@ -297,7 +337,6 @@
     </main>
 
     <footer class="footer">
-        <img src="./img/logo.png" alt="Logo Radia Euforia" class="logo_footer-img footer__img">
         <div class="wrapper">
 
             <div class="footer__boxes">
@@ -344,7 +383,7 @@
                     <h3 class="footer__box-title footer__box-title-zaiks">We've got this</h3>
                     <p>zaiks</p>
 
-                    <img src="./img/logo.png" alt="Logo Radia Euforia" class="logo_footer-img">
+                    <img src="./img/logo.webp" alt="Logo Radia Euforia" class="logo_footer-img">
 
                 </div>
 
@@ -360,7 +399,7 @@
 
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
