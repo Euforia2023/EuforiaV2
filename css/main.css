@@ -1360,7 +1360,7 @@ i.snowflake {
 	position: absolute;
 	right: 0;
 	top: 48%;
-	z-index: 9999999;
+	z-index: 10;
 }
 
 .christmas_wrapper {
