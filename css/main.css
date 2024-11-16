@@ -1368,7 +1368,7 @@ i.snowflake {
 	width: 100%;
 	height: 12vh;
 	max-width: 480px;
-	background-image: url('../img/christmas-5740761_640.png');
+	background-image: url('../img/babki.webp');
 	background-size: cover;
 	border-radius: 8px;
 	margin: 0 auto;
@@ -1444,7 +1444,6 @@ i.snowflake {
 
 	.christmas_wrapper {
 		height: 20vh;
-		background-image: url('../img/christmas-5740761_1280.png');
 	}
 
 	#zostalo {
