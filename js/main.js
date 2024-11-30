@@ -173,7 +173,7 @@ const handleCurrentYear = () => {
 // 	}, 8000)
 // }
 
-setInterval(createSnow, 2000)
+// setInterval(createSnow, 2000)
 
 // LIST
 $(document).ready(function () {
