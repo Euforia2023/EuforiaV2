@@ -1466,7 +1466,7 @@ i.snowflake {
 	} */
 }
 
-@keyframes blink {
+/* @keyframes blink {
 	0% {
 	  visibility: hidden;
 	  animation-timing-function: step-end;
@@ -1474,6 +1474,17 @@ i.snowflake {
 	25%, 100% {
 	  visibility: visible;
 	}
+  } */
+@keyframes blink {
+	50%, 80% {
+	  color: hsl(calc(var(--i) * 25), 100%, 50%);
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+	95%, 100% {
+	  opacity: 0;
+	}
   }
+
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
