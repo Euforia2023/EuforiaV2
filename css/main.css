@@ -1399,6 +1399,8 @@ i.snowflake {
 	text-align: center;
 	font-size: 1.8rem;
 	font-family: 'Playwrite CU', cursive;
+	letter-spacing: 2px;
+	animation: blink 1.5s ease infinite;
 }
 .christmas_wrapper .container .timing .LastTime {
 	display: flex;
@@ -1463,5 +1465,15 @@ i.snowflake {
 		border-radius: 8px;
 	} */
 }
+
+@keyframes blink {
+	0% {
+	  visibility: hidden;
+	  animation-timing-function: step-end;
+	}
+	25%, 100% {
+	  visibility: visible;
+	}
+  }
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
