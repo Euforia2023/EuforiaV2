@@ -1368,7 +1368,7 @@ i.snowflake {
 	width: 100%;
 	height: 12vh;
 	max-width: 480px;
-	background-image: url('../img/chrbo.webp');
+	background-image: url('../img/firework-14.gif');
 	background-size: cover;
 	background-position: center 10%;
 	border-radius: 8px;
@@ -1475,7 +1475,7 @@ i.snowflake {
 	  visibility: visible;
 	}
   } */
-/* @keyframes blink {
+ @keyframes blink {
 	50%, 80% {
 	  color: hsl(calc(var(--i) * 25), 100%, 50%);
 	  transform: translateY(0);
@@ -1484,7 +1484,7 @@ i.snowflake {
 	95%, 100% {
 	  opacity: 0;
 	}
-  } */
+  } 
 
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
