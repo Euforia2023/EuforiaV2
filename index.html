@@ -419,8 +419,12 @@
         var no = 10;
         // Configure whether snow should disappear after x seconds (0=never):
         var hidesnowtime = 0;
-        windowheight.resizeTo(audo, 846);
+        
         // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+        function updateSize() {
+            windowheight.classLiat.add("#wh");
+        }
+        
         var snowdistance = "windowheight";
         // var snowdistance = 846 + 'px';
 
@@ -503,6 +507,9 @@
             if (hidesnowtime > 0)
                 setTimeout("hidesnow()", hidesnowtime * 1000)
         }
+
+        updateSize()
+        window.addEventListener("resize", updateSize);
 
     </script>
 </body>
