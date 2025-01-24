@@ -421,9 +421,6 @@
         var hidesnowtime = 0;
         
         // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
-        function updateSize() {
-            windowheight.classLiat.add("#wh");
-        }
         
         var snowdistance = "windowheight";
         // var snowdistance = 846 + 'px';
@@ -439,7 +436,7 @@
 
         var dx, xp, yp;    // coordinate and position variables
         var am, stx, sty;  // amplitude and step variables
-        var i, doc_width = 800, doc_height = 600;
+        var i, doc_width = 800, doc_height = 400;
 
         if (ns6up) {
             doc_width = self.innerWidth;
