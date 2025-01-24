@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -408,6 +410,7 @@
         * Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
         * Last updated Nov 9th, 05' by DD. This notice must stay intact for use
         ******************************************/
+        const wh = document.querySelector('#wh');
         function openwindow() {
             window.open("autumn_effect.htm", "", "width=350,height=500")
         }
@@ -431,12 +434,12 @@
         var ns6up = (document.getElementById && !document.all) ? 1 : 0;
 
         function iecompattest() {
-            return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+            return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.wh
         }
 
         var dx, xp, yp;    // coordinate and position variables
         var am, stx, sty;  // amplitude and step variables
-        var i, doc_width = 800, doc_height = 400;
+        var i, doc_width = 800, doc_height = 600;
 
         if (ns6up) {
             doc_width = self.innerWidth;
