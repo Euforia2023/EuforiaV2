@@ -890,7 +890,7 @@ i {
 @media (min-width: 375px) {
 	.header__heading {
 		font-size: 4rem;
-		margin-top: 2em;
+		margin-top: 1.5em;
 	}
 
 	.hero-img__title {
