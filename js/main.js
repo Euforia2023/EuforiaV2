@@ -292,7 +292,7 @@ function countdown(yr, m, d) {
 	}
 }
 
-window.document.addEventListener('DOMContentLoaded', countdown(2025, 12, 24))
+window.document.addEventListener('DOMContentLoaded', countdown(2026, 01, 01))
 
 // SCROLL UP ARROW END
 handleCurrentYear()
