@@ -1,4 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nowoczesne Radio Internetowe, stworzone przez ludzi, dla ludzi. Zapraszamy do wspólnej zabawy, dołącz do nas już dziś!">
+    <title>Radio Euforia</title>
+    <script src="https://kit.fontawesome.com/9cd6a9c545.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wr">
+        <img src="" alt="" class="chrr">
+        <div class="christmas_wrapper">
+            <div class="container">
+                <div class="timing">
+                    <h1 class="timing__title">Do Nowego Roku Pozostało:</h1>
+                    <div id="zostalo"></div>
+                     <br>
+                    <div class="LastTime">
+                        <span id="Dni"></span>
+                        <span id="Godziny"></span>
+                        <span id="Minuty"></span>
+                        <span id="Sekundy"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="burger-btn">
+        <div class="burger-btn__box">
+            <div class="burger-btn__bars"></div>
+        </div>
+    </button>
+    <div class="apk__box">
+        <button class="apk__box-btn apk">
+            <a href="https://play.google.com/store/apps/details?id=com.panelradiowy" target="_blank" rel="noopener">
+                <i class="fa-brands fa-android"></i>
+            </a>
+        </button>
+        <p>APP</p>
+    </div>
+    <div class="player_btn"></div>
+    <img src="./img/IMG_2017.webp" alt="Logo Radia Euforia" class="logo-img">
+    <i class="fa-regular fa-circle-play player_btn-set btn1"></i>
+    <i class="fa-regular fa-circle-pause player_btn-set btn2"></i>
+    </div>
+    <div class="player_box">
+        <marquee class="user_play" direction="left" width="400" height="30" behavior="scroll" style="border:none">
+            Gra dla was: 
+            <?php
+            // Pobieranie nazwy prezentera z serwera SHOUTcast
+            $url = 'https://s3.slotex.pl:7510/stats?sid=1';
+            $response = @file_get_contents($url);
+            
+            $prezenter = 'RADIO EUFORIA'; // fallback, jeśli coś nie działa
+            
+            if ($response !== false) {
+                $xml = simplexml_load_string($response);
+                if ($xml && isset($xml->SERVERGENRE)) {
+                    $genre = trim((string)$xml->SERVERGENRE);
+                    if (!empty($genre)) {
+                        $prezenter = $genre;
+                    }
+                }
+            }
+            
+            echo htmlspecialchars($prezenter, ENT_QUOTES, 'UTF-8');
+            ?>
+        </marquee>
+    </div>
+    <!-- Reszta strony bez zmian -->
+    <nav class="nav">
+        <div class="nav__items">
+            <a href="https://radioeuforia.panelradiowy.pl/radio.php?script" target="_blank" rel="noopener"
+                class="nav__item">Słuchaj nas w playerze</a>
+            <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=pozdrowienia" target="_blank" rel="noopener"
+                class="nav__item pop" onclick="regards()">Pozdrowienia</a>
+            <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa" target="_blank" rel="noopener"
+                class="nav__item pop">Prezenterzy</a>
+            <a href="https://radioeuforia.panelradiowy.pl/" target="_blank" rel="noopener" class="nav__item pop">Panel
+                Prezentera</a>
+            <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja" target="_blank" rel="noopener"
+                class="nav__item pop">Rekrutacja</a>
+            <a href="https://radioeuforia.pl/czat" target="_blank" rel="noopener"
+                class="nav__item pop">Czat Zapasowy</a>
+        </div>
+    </nav>
+    <header class="header section">
+        <div class="header__medias">
+            <div class="header__medias-box">
+                <button class="header__medias-btn chat">
+                    <a href="https://polfan.pl/app/" target="_blank" rel="noopener"><i
+                            class="fa-regular fa-comment-dots"></i></a>
+                </button>
+                <p>Czat</p>
+            </div>
+            <div class="header__medias-box">
+                <button class="header__medias-btn list">
+                    <a href="https://radioeuforia.panelradiowy.pl/embed.php?script=lista" target="_blank"
+                        rel="noopener"><i class="fa-solid fa-list"></i></a>
+                </button>
+                <p>Lista Przebojów</p>
+            </div>
+            <div class="header__medias-box">
+                <button class="header__medias-btn fb">
+                    <a href="https://www.facebook.com/profile.php?id=61554288802486" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </button>
+                <p>Fanpage</p>
+            </div>
+        </div>
+        <h1 class="header__heading">Radio Euforia</h1>
+        <a class="arrow-down-link" href="#ram"><i class="fa-solid fa-chevron-down header__arrow-down"></i></a>
+        <div class="white-block white-block-left"></div>
+    </header>
+    <main class="main">
+        <section class="presenters section-padding section white-section">
+            <div class="wrapper">
+                <h2 class="section-heading" id="ram">Ramówka</h2>
+                <div class="presenters__box">
+                    <div class="presenters__box-daysHolder">
+                        <h3 class="presenters__title-days">Wybierz dzień tygodnia: </h3>
+                        <div class="dropholder">
+                            <p>Wybierz</p>
+                            <div class="dropdown">
+                                <p><i class="fa-solid fa-list-check"></i> Dzień tygodnia</p>
+                            </div>
+                            <ul class="menu">
+                                <li class="item day-one"><i class="fa-regular fa-square-check"></i> Poniedziałek</li>
+                                <li class="item day-two"><i class="fa-regular fa-square-check"></i> Wtorek</li>
+                                <li class="item day-three"><i class="fa-regular fa-square-check"></i> Środa</li>
+                                <li class="item day-four"><i class="fa-regular fa-square-check"></i> Czwartek</li>
+                                <li class="item day-five"><i class="fa-regular fa-square-check"></i> Piątek</li>
+                                <li class="item day-six"><i class="fa-regular fa-square-check"></i> Sobota</li>
+                                <li class="item day-seven"><i class="fa-regular fa-square-check"></i> Niedziela</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="daysHolder">
+                        <div class="pon">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=1"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                        <div class="wt">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=2"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                        <div class="sr">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=3"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                        <div class="czw">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=4"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                        <div class="pt">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=5"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                        <div class="sob">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=6"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                        <div class="nied">
+                            <iframe src="https://radioeuforia.panelradiowy.pl/embed.php?script=ramowka2&dzien=7"
+                                scrolling="auto" border="0" marginwidth="0" marginheight="0" frameborder="no"
+                                width="490" height="300"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-img section">
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+            <p class="hero-img__title">Radio Euforia</p>
+            <hr>
+            <p class="hero-img__text">Jedyne takie radio w sieci!</p>
+            <hr>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <div class="footer__box footer__box-desktop footer__box-first">
+                    <h3 class="footer__box-title">Menu</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a
+                                href="https://radioeuforia.panelradiowy.pl/radio.php?script" target="_blank"
+                                rel="noopener">Słuchaj nas w playerze</a>
+                        </li>
+                        <li class="footer__box-list-item"><a
+                                href="https://radioeuforia.panelradiowy.pl/embed.php?script=pozdrowienia"
+                                target="_blank" rel="noopener" onclick="regards()">Pozdrowienia</a>
+                        </li>
+                        <li class="footer__box-list-item"> <a
+                                href="https://radioeuforia.panelradiowy.pl/embed.php?script=ekipa" target="_blank"
+                                rel="noopener">Prezenterzy</a></li>
+                        <li class="footer__box-list-item"> <a href="https://radioeuforia.panelradiowy.pl/"
+                                target="_blank" rel="noopener">Panel Prezentera</a></li>
+                        <li class="footer__box-list-item"><a
+                                href="https://radioeuforia.panelradiowy.pl/embed.php?script=rekrutacja" target="_blank"
+                                rel="noopener">Rekrutacja</a>
+                        </li>
+                        <li class="footer__box-list-item"><a
+                                href="https://radioeuforia.pl/czat/" target="_blank"
+                                rel="noopener">Czat Zapasowy</a>
+                        </li>
+                  </ul>
+                </div>
+                <div class="footer__box footer__box-second">
+                    <h3 class="footer__box-title">Radio Euforia</h3>
+                    <p>Nowoczesne Radio Internetowe, stworzone przez ludzi, dla ludzi. Zapraszamy do wspólnej zabawy,
+                        dołącz do nas już dziś!</p>
+                </div>
+                <div class="footer__box footer__box-zaiks footer__box-third">
+                    <h3 class="footer__box-title footer__box-title-zaiks">We've got this</h3>
+                    <p>zaiks</p>
+                    <img src="./img/logo.webp" alt="Logo Radia Euforia" class="logo_footer-img">
+                </div>
+            </div>
+            <i class="fa-solid fa-angles-up"></i>
+            <hr>
+            <p class="footer__bottom-text">Created By <span class="lillie">Lillie ♡</span> and <span
+                    class="eric">Eryk</span> &copy; <span class="footer__year"></span> Radio Euforia </p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript">
+        // Efekt śniegu bez zmian
+        const wh = document.getElementById('#wh');
+        function openwindow() {
+            window.open("autumn_effect.htm", "", "width=350,height=500")
+        }
+        var snowsrc = "./img/snow.gif"
+        var no = 10;
+        var hidesnowtime = 0;
+        var snowdistance = "windowheight";
+        var ie4up = (document.all) ? 1 : 0;
+        var ns6up = (document.getElementById && !document.all) ? 1 : 0;
+        function iecompattest() {
+            return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+        }
+        var dx, xp, yp;
+        var am, stx, sty;
+        var i, doc_width = 800, doc_height = 600;
+        if (ns6up) {
+            doc_width = self.innerWidth;
+            doc_height = self.innerHeight;
+        } else if (ie4up) {
+            doc_width = iecompattest().clientWidth;
+            doc_height = iecompattest().clientHeight;
+        }
+        dx = new Array();
+        xp = new Array();
+        yp = new Array();
+        am = new Array();
+        stx = new Array();
+        sty = new Array();
+        snowsrc = (snowsrc.indexOf("dynamicdrive.com") != -1) ? "snow.gif" : snowsrc
+        for (i = 0; i < no; ++i) {
+            dx[i] = 0;
+            xp[i] = Math.random() * (doc_width - 50);
+            yp[i] = Math.random() * doc_height;
+            am[i] = Math.random() * 20;
+            stx[i] = 0.02 + Math.random() / 10;
+            sty[i] = 0.7 + Math.random();
+            if (ie4up || ns6up) {
+                if (i == 0) {
+                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='" + snowsrc + "' border=\"0\"><\/a><\/div>");
+                } else {
+                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='" + snowsrc + "' border=\"0\"><\/div>");
+                }
+            }
+        }
+        function snowIE_NS6() {
+            doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
+            doc_height = (window.innerHeight && snowdistance == "windowheight") ? window.innerHeight : (ie4up && snowdistance == "windowheight") ? iecompattest().clientHeight : (ie4up && !window.opera && snowdistance == "pageheight") ? iecompattest().scrollHeight : iecompattest().offsetHeight;
+            if (snowdistance == "windowheight") {
+                doc_height = window.innerHeight || iecompattest().clientHeight
+            }
+            else {
+                doc_height = iecompattest().scrollHeight
+            }
+            for (i = 0; i < no; ++i) {
+                yp[i] += sty[i];
+                if (yp[i] > doc_height - 50) {
+                    xp[i] = Math.random() * (doc_width - am[i] - 30);
+                    yp[i] = 0;
+                    stx[i] = 0.02 + Math.random() / 10;
+                    sty[i] = 0.7 + Math.random();
+                }
+                dx[i] += stx[i];
+                document.getElementById("dot" + i).style.top = yp[i] + "px";
+                document.getElementById("dot" + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + "px";
+            }
+            snowtimer = setTimeout("snowIE_NS6()", 10);
+        }
+        function hidesnow() {
+            if (window.snowtimer) clearTimeout(snowtimer)
+            for (i = 0; i < no; i++) document.getElementById("dot" + i).style.visibility = "hidden"
+        }
+        if (ie4up || ns6up) {
+            snowIE_NS6();
+            if (hidesnowtime > 0)
+                setTimeout("hidesnow()", hidesnowtime * 1000)
+        }
+        updateSize()
+        window.addEventListener("resize", updateSize);
+    </script>
+</body>
+</html>
 
+<!-- 
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -515,4 +846,4 @@
     </script>
 </body>
 
-</html>
+</html> -->
