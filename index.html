@@ -18,9 +18,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/player.css">
 </head>
 <body>
-    <div class="wr">
+    <!-- <div class="wr">
         <img src="" alt="" class="chrr">
         <div class="christmas_wrapper">
             <div class="container">
@@ -37,7 +38,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <button class="burger-btn">
         <div class="burger-btn__box">
             <div class="burger-btn__bars"></div>
@@ -51,6 +52,19 @@
         </button>
         <p>APP</p>
     </div>
+
+    <!-- PLAYER START -->
+<div class="player-container">
+        <div class="play-btn" id="playBtn">
+            <div class="volume-container">
+                <input type="range" class="volume" id="volume" min="0" max="1" step="0.05" value="0.7">
+            </div>
+        </div>
+    </div>
+
+    <audio id="stream" preload="none"></audio>
+
+<!-- PLAYER END -->
     <div class="player_btn"></div>
     <img src="./img/IMG_2017.webp" alt="Logo Radia Euforia" class="logo-img">
     <i class="fa-regular fa-circle-play player_btn-set btn1"></i>
@@ -716,8 +730,9 @@
     </footer>
 
     <script src="./js/main.js"></script>
+<script src="./js/player.js"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
         /******************************************
         * Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
@@ -825,7 +840,7 @@
         updateSize()
         window.addEventListener("resize", updateSize);
 
-    </script>
+    </script> -->
 </body>
 
 </html> -->
