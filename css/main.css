@@ -118,7 +118,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.player_btn-set {
+/* .player_btn-set {
 	position: absolute;
 	top: 15px;
 	left: 110px;
@@ -128,12 +128,12 @@ body {
 	cursor: pointer;
 	transition: display 0.3s;
 	z-index: 10;
-}
+} */
 
-.player_btn-set:hover,
+/* .player_btn-set:hover,
 .fa-circle-pause:hover {
 	color: rgb(210, 162, 255);
-}
+} */
 
 .fa-circle-pause {
 	display: none;
