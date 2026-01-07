@@ -84,8 +84,16 @@
 
 @media (min-width: 576px) {
 	.player-container {
-		top: 15px;
-		left: 148px;
+		top: 21px;
+		left: 156px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.player-container {
+		top: 21px;
+		left: 156px;
 	}
 
 }
