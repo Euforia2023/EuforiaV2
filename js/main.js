@@ -50,23 +50,24 @@ function listp() {
 	window.open('https://radioeuforia.panelradiowy.pl/embed.php?script=lista', '_blank', 'widh=630, height=700')
 }
 // PLAYER
-const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?sid=1')
-const btnPlay = document.querySelector('.btn1')
-const btnStop = document.querySelector('.btn2')
 
-const buttonOnclick = () => {
-	playerBtnStart.style.display = 'none'
-	playerBtnStop.style.display = 'block'
-	audio.play()
+// const audio = new Audio('https://s3.slotex.pl/shoutcast/7510/stream?sid=1')
+// const btnPlay = document.querySelector('.btn1')
+// const btnStop = document.querySelector('.btn2')
 
-	// handlePlayersStart()
-}
+// const buttonOnclick = () => {
+// 	playerBtnStart.style.display = 'none'
+// 	playerBtnStop.style.display = 'block'
+// 	audio.play()
 
-const handlePlayersStop = () => {
-	playerBtnStart.style.display = 'block'
-	playerBtnStop.style.display = 'none'
-	audio.pause()
-}
+// 	// handlePlayersStart()
+// }
+
+// const handlePlayersStop = () => {
+// 	playerBtnStart.style.display = 'block'
+// 	playerBtnStop.style.display = 'none'
+// 	audio.pause()
+// }
 // PLAYER END
 
 // NAV
