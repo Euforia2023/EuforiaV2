@@ -295,7 +295,17 @@ function countdown(yr, m, d) {
 
 window.document.addEventListener('DOMContentLoaded', countdown(2026, 01, 01))
 
+// SCROLL UP ARROW START
+const scrollUp = () => {
+	scrollUpArrow.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth', // Płynne przewijanie
+		})
+	})
+}
 // SCROLL UP ARROW END
+
 handleCurrentYear()
 navBtn.addEventListener('click', handlerNav)
 playerBtnStart.addEventListener('click', buttonOnclick)
