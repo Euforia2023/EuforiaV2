@@ -11,7 +11,7 @@ window.addEventListener('resize', resizeCanvas);
 
 // Tablica serduszek
 let hearts = [];
-const maxHearts = 150;
+const maxHearts = 50;
 
 function createHeart() {
     return {
